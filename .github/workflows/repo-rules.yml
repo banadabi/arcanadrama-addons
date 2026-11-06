@@ -1,0 +1,39 @@
+name: ArcanaDrama repository rules
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, builds]
+  pull_request:
+    branches: [main, builds]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: arcana-rules-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  rules:
+    name: Mandatory repository rules
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Read source tree
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ (github.ref_name == 'main' || github.base_ref == 'main') && github.sha || 'main' }}
+          path: .source
+          persist-credentials: false
+      - name: Read package tree
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ (github.ref_name == 'builds' || github.base_ref == 'builds') && github.sha || 'builds' }}
+          path: .packages
+          persist-credentials: false
+      - name: Check all registered addons
+        working-directory: .source
+        run: |
+          python3 -m unittest discover -s tests -p test_repo_rules.py
+          python3 tools/validate_repo.py --main . --builds ../.packages
