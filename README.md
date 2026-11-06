@@ -1,34 +1,9 @@
 # ArcanaDrama
 
-Shorts Drama siteleri için hazırladığımız Cloudstream eklentilerini tek depoda topluyoruz.
+Cloudstream dağıtım dosyaları: **ArcanaShortizle.cs3**, **ArcanaNarto.cs3** ve tek **plugins.json** listesi. Paket URL’leri `?v=SHA256` içerir; sürüm/hash/bayt değerleri dosyalardan üretilir.
 
-## Kurulum
+Sabit kurulum: https://raw.githubusercontent.com/banadabi/arcanadrama-addons/main/repo.json
 
-Cloudstream’de depo ekleme ekranına şu adresi gir:
+Kaynak ve derleme projeleri [ana dalda](https://github.com/banadabi/arcanadrama-addons): [Shortİzle](https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaShortizle), [Narto](https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaNarto). [GPL-3.0](LICENSE).
 
-```text
-https://raw.githubusercontent.com/banadabi/arcanadrama-addons/main/repo.json
-```
-
-Depo adı **ArcanaDrama**. Shortİzle, Narto ve sonraki eklentiler aynı deponun altında görünür; her biri için ayrı depo eklemek gerekmez.
-
-Bağımsız Play’de veya ArcanaDrama içindeki **Play → Ayarlar → Eklentiler → Eklenti ekle → CloudStream** yolundan da aynı adresi kullanabilirsin. Arcana içindeki güncel oynatma uyumu için **[Arcana1.1.43(75) veya sonrası](https://arcanadrama.download/apk)** gerekir.
-
-## Eklentiler
-
-| Eklenti | Sürüm | Kapsam |
-| --- | --- | --- |
-| (Arcana Drama) Shortİzle | 4 | Kısa drama kataloğu, bölümler ve kaynak altyazıları |
-| (Arcana Drama) Narto | 3 | Kısa dramalar, MovieBox anime ve film/dizi katalogları, kaynak altyazıları |
-
-Geliştirici: **ArcanaDrama**. Paketler tek [plugins.json](plugins.json) listesinde sürüm ve SHA256 bilgileriyle tutulur.
-
-## Kaynak ve lisans
-
-Eklentiler [GPL-3.0](LICENSE) lisanslıdır. Sürümle eşleşen kaynak ve derleme dosyaları [sources](sources) dizinindedir.
-
-## Destek ol
-
-Projeye destek olmak istersen bir kahve ısmarlayabilirsin:
-
-**[☕ Buy Me a Coffee — banadabi](https://www.buymeacoffee.com/banadabi)**
+Geliştirici **ArcanaDrama**. [☕ Buy Me a Coffee — banadabi](https://www.buymeacoffee.com/banadabi).
