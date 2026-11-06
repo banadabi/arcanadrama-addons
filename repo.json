@@ -1,0 +1,8 @@
+{
+  "name": "ArcanaDrama",
+  "description": "ArcanaDrama Shorts Drama eklenti deposu",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/main/plugins.json"
+  ]
+}

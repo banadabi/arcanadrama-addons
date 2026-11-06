@@ -1,27 +1,34 @@
-# Arcana Drama Addons
+# ArcanaDrama
 
 Shorts Drama siteleri için hazırladığımız Cloudstream eklentilerini tek depoda topluyoruz.
 
-Bu, eklentilerin **public dağıtım deposudur**. Burada `.cs3` paketleri, JSON kurulum listeleri, README ve gerekli lisans/kaynak paketleri paylaşılır. Özel geliştirme notları bu depoda tutulmaz.
+## Kurulum
 
-Eklenti adlarımız **`(Arcana Drama) Eklenti İsmi`** biçimindedir.
+Cloudstream’de depo ekleme ekranına şu adresi gir:
 
-## Uyumluluk
+```text
+https://raw.githubusercontent.com/banadabi/arcanadrama-addons/main/repo.json
+```
 
-Bir eklenti yayımlanmadan önce aynı dosya ve sürümle üç uygulamada ayrı ayrı test edilir:
+Depo adı **ArcanaDrama**. Shortİzle, Narto ve sonraki eklentiler aynı deponun altında görünür; her biri için ayrı depo eklemek gerekmez.
 
-- Orijinal **Cloudstream**
-- Bağımsız **Play**
-- **ArcanaDrama** içindeki Play
+Bağımsız Play’de veya ArcanaDrama içindeki **Play → Ayarlar → Eklentiler → Eklenti ekle → CloudStream** yolundan da aynı adresi kullanabilirsin. Arcana içindeki güncel oynatma uyumu için **[Arcana1.1.43(75) veya sonrası](https://arcanadrama.download/apk)** gerekir.
 
-Katalog ve bölüm listesinin gelmesi yeterli değildir. Gerçek video görüntüsü, ilerleyen süre, varsa ayrı altyazı ve sonraki bölüm geçişi de kontrol edilir.
+## Eklentiler
 
-İlk doğrulanmış sürümün JSON kurulum bağlantısı burada paylaşılacak. Testi tamamlanmayan dosyalar kararlı sürüm olarak yayımlanmaz.
+| Eklenti | Sürüm | Kapsam |
+| --- | --- | --- |
+| (Arcana Drama) Shortİzle | 4 | Kısa drama kataloğu, bölümler ve kaynak altyazıları |
+| (Arcana Drama) Narto | 3 | Kısa dramalar, MovieBox anime ve film/dizi katalogları, kaynak altyazıları |
+
+Geliştirici: **ArcanaDrama**. Paketler tek [plugins.json](plugins.json) listesinde sürüm ve SHA256 bilgileriyle tutulur.
+
+## Kaynak ve lisans
+
+Eklentiler [GPL-3.0](LICENSE) lisanslıdır. Sürümle eşleşen kaynak ve derleme dosyaları [sources](sources) dizinindedir.
 
 ## Destek ol
 
 Projeye destek olmak istersen bir kahve ısmarlayabilirsin:
 
 **[☕ Buy Me a Coffee — banadabi](https://www.buymeacoffee.com/banadabi)**
-
-Geliştirici: **ArcanaDrama**
