@@ -17,6 +17,10 @@ Bağımsız Play ve ArcanaDrama içindeki **Play → Ayarlar → Eklentiler → 
 | (Arcana Drama) Shortİzle | 4 | Kısa dramalar, bölümler ve kaynak altyazıları |
 | (Arcana Drama) Narto | 3 | Kısa dramalar, MovieBox anime ve film/dizi katalogları |
 
+## Zorunlu repo kuralı
+
+Bu repoya eklenen **bütün eklentiler** [AGENTS.md kurallarına](AGENTS.md) uymak zorundadır. Dal/kaynak düzeni, ZIP yasağı ve gerçek sürüm/SHA/bayt sözleşmesi CI’da kontrol edilir. Kurala uymayan aday kabul edilmez.
+
 ## Depo düzeni
 
 - **main:** [ArcanaShortizle](ArcanaShortizle), [ArcanaNarto](ArcanaNarto) kaynakları, Gradle projeleri ve derleme araçları.

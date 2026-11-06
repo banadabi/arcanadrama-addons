@@ -2,11 +2,15 @@ name: ArcanaDrama build candidates
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches: [main]
   push:
     branches: [main]
     paths:
       - 'Arcana*/**'
       - 'tools/**'
+      - 'AGENTS.md'
+      - 'README.md'
       - 'tests/**'
       - 'addon-metadata.json'
       - 'release-state.json'
@@ -40,6 +44,10 @@ jobs:
           persist-credentials: false
       - name: Focused release-tool checks
         run: python3 -m unittest discover -s tests -p test_release.py
+      - name: Enforce mandatory repository contract
+        run: |
+          python3 -m unittest discover -s tests -p test_repo_rules.py
+          python3 tools/validate_repo.py --main . --builds .published
       - name: Reuse unchanged artifacts and reserve changed versions
         id: plan
         run: python3 tools/build.py --plan --hydrate .published --github-output
@@ -57,6 +65,8 @@ jobs:
         run: python3 tools/build.py --hydrate .published --build
       - name: Generate exact catalogue and review inputs
         run: python3 tools/build.py --hydrate .published --catalogue
+      - name: Validate prepared candidate
+        run: python3 tools/validate_repo.py --main . --builds dist --preview
       - name: Save candidate for review
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
