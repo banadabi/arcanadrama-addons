@@ -30,5 +30,20 @@
       "Movie"
     ],
     "apiVersion": 1
+  },
+  {
+    "status": 1,
+    "name": "(Arcana Drama) İzleGeç",
+    "internalName": "ArcanaIzleGec",
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "İzleGeç kısa dramaları, kaynak bölümleri ve altyazıları. Üyelik girişi: orijinal Cloudstream eklenti ayarları. Play1.2.7/Arcana75 misafir bölümlerini destekler. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaIzleGec",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "language": "tr",
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "apiVersion": 1
   }
 ]

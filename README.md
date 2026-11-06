@@ -16,6 +16,9 @@ Bağımsız Play ve ArcanaDrama içindeki **Play → Ayarlar → Eklentiler → 
 | --- | --- | --- |
 | (Arcana Drama) Shortİzle | 4 | Kısa dramalar, bölümler ve kaynak altyazıları |
 | (Arcana Drama) Narto | 3 | Kısa dramalar, MovieBox anime ve film/dizi katalogları |
+| (Arcana Drama) İzleGeç | 4 | Kısa dramalar, kaynak altyazıları; Cloudstream’de kendi hesap girişi |
+
+İzleGeç hesap girişi orijinal Cloudstream’in eklenti ayarlarından yapılır. Mevcut Play1.2.7/Arcana75’te hesap ayar düğmesi yoktur; bu sürümlerde misafir bölümleri desteklenir.
 
 ## Zorunlu repo kuralı
 
@@ -23,7 +26,7 @@ Bu repoya eklenen **bütün eklentiler** [AGENTS.md kurallarına](AGENTS.md) uym
 
 ## Depo düzeni
 
-- **main:** [ArcanaShortizle](ArcanaShortizle), [ArcanaNarto](ArcanaNarto) kaynakları, Gradle projeleri ve derleme araçları.
+- **main:** [ArcanaShortizle](ArcanaShortizle), [ArcanaNarto](ArcanaNarto), [ArcanaIzleGec](ArcanaIzleGec) kaynakları, Gradle projeleri ve derleme araçları.
 - **builds:** kurulacak `.cs3` dosyaları ve tek [plugins.json](https://github.com/banadabi/arcanadrama-addons/blob/builds/plugins.json) listesi.
 - Kurulum adresi sabittir. Paket adresindeki `?v=SHA256` içeriği önbellekten ayırır; gerçek sürüm numarası `version` alanındadır.
 
