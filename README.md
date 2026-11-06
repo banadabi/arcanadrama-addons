@@ -15,7 +15,7 @@ Bağımsız Play ve ArcanaDrama içindeki **Play → Ayarlar → Eklentiler → 
 | Eklenti | Sürüm | Kapsam |
 | --- | --- | --- |
 | (Arcana Drama) Shortİzle | 4 | Kısa dramalar, bölümler ve kaynak altyazıları |
-| (Arcana Drama) Narto | 3 | Kısa dramalar, MovieBox anime ve film/dizi katalogları |
+| (Arcana Drama) Narto | 5 | Kısa dramalar, MovieBox anime ve film/dizi katalogları |
 | (Arcana Drama) İzleGeç | 4 | Kısa dramalar, kaynak altyazıları; Cloudstream’de kendi hesap girişi |
 
 İzleGeç hesap girişi orijinal Cloudstream’in eklenti ayarlarından yapılır. Mevcut Play1.2.7/Arcana75’te hesap ayar düğmesi yoktur; bu sürümlerde misafir bölümleri desteklenir.
@@ -38,7 +38,7 @@ Kaynak değişirse sürüm otomatik bir artar; aynı kaynak ve dondurulmuş pake
 
 ## Kaynak ve lisans
 
-[GPL-3.0](LICENSE). Her sürümün Kotlin kaynakları, derleme dosyaları, derleme için gereken shim ve üçüncü taraf lisansları normal dosyalar halinde ilgili klasördedir. Kaynak arşivi ZIP dosyaları repo ağacında tutulmaz. [SOURCE-PROVENANCE.json](SOURCE-PROVENANCE.json) mevcut paketlerin değişmeden taşınan kaynak dosyalarını kaydeder.
+[GPL-3.0](LICENSE). Her sürümün Kotlin kaynakları, derleme dosyaları, derleme için gereken shim ve üçüncü taraf lisansları normal dosyalar halinde ilgili klasördedir. Kaynak arşivi ZIP dosyaları repo ağacında tutulmaz. [SOURCE-PROVENANCE.json](SOURCE-PROVENANCE.json) paketlerin karşılık gelen kaynak dosyalarını ve sürüm geçmişini kaydeder.
 
 ## Destek ol
 

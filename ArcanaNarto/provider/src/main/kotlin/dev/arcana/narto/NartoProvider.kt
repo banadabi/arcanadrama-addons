@@ -335,9 +335,9 @@ class NartoProvider(private val context:Context):MainAPI(){
         for(sub in subs){
             val remote=text(sub,"subtitle_url")?:continue;val full=absolute(remote,w.url);publicUrl(full)
             if(!used.add(full))continue
-            val code=text(sub,"language_code").orEmpty();val label=if(code.startsWith("tr",true))"Türkçe" else text(sub,"label")?:code.ifBlank{"Altyazı"}
+            val label=nartoSubtitleLanguage(text(sub,"language_code"),text(sub,"label"))
             val ext="vtt"
-            subtitleCallback(newSubtitleFile(code.ifBlank{label},resource(full,ext)))
+            subtitleCallback(newSubtitleFile(label,resource(full,ext)))
         }
         text(e,"subtitle_url")?.let{remote->val full=absolute(remote,w.url);publicUrl(full);if(used.add(full))subtitleCallback(newSubtitleFile("Altyazı",resource(full,"vtt")))}
         callback(newExtractorLink(name,"$name · ${payload.optString("provider")}",playback,if(isHls)ExtractorLinkType.M3U8 else ExtractorLinkType.VIDEO){quality=Qualities.Unknown.value;headers=emptyMap();this.referer=""})
