@@ -26,7 +26,6 @@ Bu repoya eklenen **bütün eklentiler** [AGENTS.md kurallarına](AGENTS.md) uym
 - **main:** [ArcanaShortizle](ArcanaShortizle), [ArcanaNarto](ArcanaNarto) kaynakları, Gradle projeleri ve derleme araçları.
 - **builds:** kurulacak `.cs3` dosyaları ve tek [plugins.json](https://github.com/banadabi/arcanadrama-addons/blob/builds/plugins.json) listesi.
 - Kurulum adresi sabittir. Paket adresindeki `?v=SHA256` içeriği önbellekten ayırır; gerçek sürüm numarası `version` alanındadır.
-- `plugins/` içindeki iki eski CS3 adresi önceki kurulumların uyumluluğu için korunur. Yeni dağıtım `builds` dalındadır.
 
 ## Derleme ve sürümleme
 

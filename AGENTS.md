@@ -8,7 +8,7 @@ Bu dosya `banadabi/arcanadrama-addons` reposuna eklenen **bütün mevcut ve gele
 - `builds`: eklentiler kökte `<internalName>.cs3` dosyaları ve tek `plugins.json` listesiyle dağıtılır.
 - Tek görünen geliştirici deposu **ArcanaDrama** olur. Sabit kurulum adresi `https://raw.githubusercontent.com/banadabi/arcanadrama-addons/main/repo.json` korunur; yeni sürüm veya kaynak için yeni depo adresi açılmaz.
 - Kaynak arşivi `.zip` dosyaları iki dalın repo ağacına **eklenmez**. Karşılık gelen kaynak, derleme ve lisans dosyaları normal dosyalarla sağlanır. `.cs3` biçiminin kendi paket yapısı bu yasağa dahil değildir.
-- Eski kurulumların bozulmaması için yalnız mevcut iki tarihsel alias (`plugins/ArcanaShortizle-4.cs3`, `plugins/ArcanaNarto-3.cs3`) aynı baytlarla korunur. Yeni ana-dal CS3 aliasları veya ikinci dağıtım düzeni oluşturulmaz.
+- Ana dalda eski veya yeni **hiçbir CS3 dosyası bulunmaz**. Bütün paketler yalnız `builds` dalının kökünde yer alır. Eski `plugins/` dağıtımı, alias veya uyumluluk istisnası tutulmaz.
 
 ## 2. Kimlik ve liste sözleşmesi zorunludur
 

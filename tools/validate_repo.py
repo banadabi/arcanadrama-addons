@@ -19,11 +19,6 @@ REQUIRED = {"url", "status", "version", "name", "internalName", "authors", "desc
             "fileSize", "repositoryUrl", "language", "tvTypes", "apiVersion", "fileHash"}
 EXCLUDED = {".git", ".gradle", ".kotlin", "build", ".release-cache", "__pycache__",
             ".published", "dist", "review-bundle"}
-LEGACY = {
-    "plugins/ArcanaShortizle-4.cs3": "7fe7540579262bf8468484ef54f12ef3ec44919d8510cc5158c4a6fca630dbf0",
-    "plugins/ArcanaNarto-3.cs3": "0fdbca74cc8d31b3270deb8eecb850ba8f023b28ed1923d8a9c84a6b9af3b2b2",
-}
-
 _SPEC = importlib.util.spec_from_file_location("arcana_release_rules_engine", Path(__file__).with_name("release.py"))
 _RELEASE = importlib.util.module_from_spec(_SPEC)
 _SPEC.loader.exec_module(_RELEASE)
@@ -130,12 +125,8 @@ def validate(main, builds, preview=False):
         for relative in files:
             _safe_file(root_path, relative)
     for relative in main_files:
-        if PurePosixPath(relative).suffix.lower() != ".cs3":
-            continue
-        if relative not in LEGACY:
-            raise ValueError("New CS3 files belong only in builds: " + relative)
-        if _sha(_safe_file(main, relative).read_bytes()) != LEGACY[relative]:
-            raise ValueError("Legacy main CS3 alias hash changed: " + relative)
+        if PurePosixPath(relative).suffix.lower() == ".cs3":
+            raise ValueError("CS3 files belong only in builds; none are allowed in main: " + relative)
     root = _json(builds, "repo.json")
     _repo(root)
     entries = _json(builds, "plugins.json")

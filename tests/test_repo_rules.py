@@ -96,6 +96,13 @@ class RepoRulesTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "orphan"):
             rules.validate(self.main, self.builds)
 
+    def test_former_main_alias_is_rejected_without_exception(self):
+        aliases = self.main / "plugins"
+        aliases.mkdir()
+        (aliases / "ArcanaShortizle-4.cs3").write_bytes((self.builds / "ArcanaExample.cs3").read_bytes())
+        with self.assertRaisesRegex(ValueError, "none are allowed in main"):
+            rules.validate(self.main, self.builds)
+
 
 if __name__ == "__main__":
     unittest.main()
