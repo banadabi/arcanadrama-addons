@@ -1,0 +1,6 @@
+{
+  "pluginClassName": "dev.arcana.narto.ArcanaNartoPlugin",
+  "name": "ArcanaNarto",
+  "version": 3,
+  "requiresResources": false
+}

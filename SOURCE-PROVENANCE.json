@@ -1,0 +1,236 @@
+{
+  "scope": "Unpacked exact existing published corresponding source archives; no executable CS3 changes. Only metadata/layout migration.",
+  "modules": [
+    {
+      "name": "ArcanaShortizle",
+      "version": 4,
+      "original_source_zip_sha256": "87c57e48d710323b189e23f09704215a9c551f0d8c43fa08778268deabd05f99",
+      "files": [
+        {
+          "path": "ArcanaShortizle/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "size": 35149
+        },
+        {
+          "path": "ArcanaShortizle/README.md",
+          "sha256": "e896430cc59fbe78f3d8d88ad96174fb1cfc60c72165c9629a0417bb6ce9958b",
+          "size": 1099
+        },
+        {
+          "path": "ArcanaShortizle/build.gradle.kts",
+          "sha256": "74f299b886d2810d31b3e50d7e83647e3a5dbc656d54de711241659752d29c9b",
+          "size": 131
+        },
+        {
+          "path": "ArcanaShortizle/compile-api/build.gradle.kts",
+          "sha256": "a224b875a64fa7c16ddc032858861ccf83a0db130cda0a1f62c28574a6fa27cd",
+          "size": 424
+        },
+        {
+          "path": "ArcanaShortizle/compile-api/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaShortizle/compile-api/src/main/java/com/lagradost/cloudstream3/plugins/Plugin.kt",
+          "sha256": "ebfe2c713b04d3c241769150da23a45f0a0dbc2ddaa8e3dc745796678f0b0e5e",
+          "size": 950
+        },
+        {
+          "path": "ArcanaShortizle/gradle/wrapper/gradle-wrapper.jar",
+          "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+          "size": 45457
+        },
+        {
+          "path": "ArcanaShortizle/gradle/wrapper/gradle-wrapper.properties",
+          "sha256": "3cbe35d0020d8393c73f4cc2572838d1db338dd27885dd4d88c46b4d28f762e0",
+          "size": 281
+        },
+        {
+          "path": "ArcanaShortizle/gradle.properties",
+          "sha256": "eac3d66466c0e04ae93dc2cea1cbd5a82e86d5907b0ea6f4361693fe27a7e2d0",
+          "size": 98
+        },
+        {
+          "path": "ArcanaShortizle/gradlew",
+          "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
+          "size": 8618
+        },
+        {
+          "path": "ArcanaShortizle/libs/jsoup-1.23.2-patched.jar",
+          "sha256": "343ddc0a3c810f6610288d07b7b0c8e977342bd0def38cc77bd3281831c715d0",
+          "size": 532928
+        },
+        {
+          "path": "ArcanaShortizle/manifest.json",
+          "sha256": "0d1689be0039456125229979c714ec28a7590f432c297b5441d6c0921346ed94",
+          "size": 145
+        },
+        {
+          "path": "ArcanaShortizle/provider/build.gradle.kts",
+          "sha256": "13b9c31eb1713e9919bcb6b7df410d7075dc9c54840190b33ac51da7cbdbaed7",
+          "size": 690
+        },
+        {
+          "path": "ArcanaShortizle/provider/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaShortizle/provider/src/main/kotlin/dev/arcana/shortizle/ArcanaHttpsTransport.kt",
+          "sha256": "3a4f5438eccde52ffce0b3468714325d62be30b10063431d7d7d9bfed77bbf8c",
+          "size": 9589
+        },
+        {
+          "path": "ArcanaShortizle/provider/src/main/kotlin/dev/arcana/shortizle/ArcanaMediaSession.kt",
+          "sha256": "220687a617132cbd0287ba07e2edf92900d3b29756cfc911c6a0a16b6174bb78",
+          "size": 13086
+        },
+        {
+          "path": "ArcanaShortizle/provider/src/main/kotlin/dev/arcana/shortizle/ArcanaShortizlePlugin.kt",
+          "sha256": "5711c8b09d2b5742d55e5170e037e5d65146c788df0d32dc4034e21e6219edeb",
+          "size": 505
+        },
+        {
+          "path": "ArcanaShortizle/provider/src/main/kotlin/dev/arcana/shortizle/ArcanaShortizleProvider.kt",
+          "sha256": "628a3faea2335ede6076c3d299869472ddd456e794e1cb59aab95a1bf66904b2",
+          "size": 22904
+        },
+        {
+          "path": "ArcanaShortizle/settings.gradle.kts",
+          "sha256": "f774acea13b54b9391a0e100390b696909970f49c2c86a6d067062addc020faf",
+          "size": 262
+        },
+        {
+          "path": "ArcanaShortizle/THIRD-PARTY-NOTICES.md",
+          "sha256": "0bbf56bb8a4c39375e80473dea494a66e9f97ac938b2555a94690c2187ca9191",
+          "size": 394
+        },
+        {
+          "path": "ArcanaShortizle/JSOUP-LICENSE",
+          "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1",
+          "size": 1102
+        }
+      ],
+      "source_code_unchanged": true
+    },
+    {
+      "name": "ArcanaNarto",
+      "version": 3,
+      "original_source_zip_sha256": "f2afffad6afae62f1ffed75718a9ac02a97dd42153b88c4874a2cb7e66cd3cad",
+      "files": [
+        {
+          "path": "ArcanaNarto/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "size": 35149
+        },
+        {
+          "path": "ArcanaNarto/README.md",
+          "sha256": "7bd17c27a50c28a290cf66593edb31dac17bfef343fa590970a0503a25c7d1c3",
+          "size": 1094
+        },
+        {
+          "path": "ArcanaNarto/build.gradle.kts",
+          "sha256": "74f299b886d2810d31b3e50d7e83647e3a5dbc656d54de711241659752d29c9b",
+          "size": 131
+        },
+        {
+          "path": "ArcanaNarto/compile-api/build.gradle.kts",
+          "sha256": "a224b875a64fa7c16ddc032858861ccf83a0db130cda0a1f62c28574a6fa27cd",
+          "size": 424
+        },
+        {
+          "path": "ArcanaNarto/compile-api/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaNarto/compile-api/src/main/java/com/lagradost/cloudstream3/plugins/Plugin.kt",
+          "sha256": "ebfe2c713b04d3c241769150da23a45f0a0dbc2ddaa8e3dc745796678f0b0e5e",
+          "size": 950
+        },
+        {
+          "path": "ArcanaNarto/gradle/wrapper/gradle-wrapper.jar",
+          "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+          "size": 45457
+        },
+        {
+          "path": "ArcanaNarto/gradle/wrapper/gradle-wrapper.properties",
+          "sha256": "3cbe35d0020d8393c73f4cc2572838d1db338dd27885dd4d88c46b4d28f762e0",
+          "size": 281
+        },
+        {
+          "path": "ArcanaNarto/gradle.properties",
+          "sha256": "eac3d66466c0e04ae93dc2cea1cbd5a82e86d5907b0ea6f4361693fe27a7e2d0",
+          "size": 98
+        },
+        {
+          "path": "ArcanaNarto/gradlew",
+          "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
+          "size": 8618
+        },
+        {
+          "path": "ArcanaNarto/libs/jsoup-1.23.2-patched.jar",
+          "sha256": "343ddc0a3c810f6610288d07b7b0c8e977342bd0def38cc77bd3281831c715d0",
+          "size": 532928
+        },
+        {
+          "path": "ArcanaNarto/manifest.json",
+          "sha256": "a239abcb3e3948ecbfa69218eb65f9dde11e4bca5fb2a63691c5f13e135be281",
+          "size": 133
+        },
+        {
+          "path": "ArcanaNarto/provider/build.gradle.kts",
+          "sha256": "a3d7df8e744a975014f3bb340fd3872d208ecc63a1a4f64a4533c3ea97f3a11a",
+          "size": 730
+        },
+        {
+          "path": "ArcanaNarto/provider/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaNarto/provider/src/main/kotlin/dev/arcana/narto/ArcanaHttpsTransport.kt",
+          "sha256": "0a205863f36593f0fb8bb538b2189d6da99b668646d45ccd185fc2c410bc7dbb",
+          "size": 9585
+        },
+        {
+          "path": "ArcanaNarto/provider/src/main/kotlin/dev/arcana/narto/ArcanaNartoPlugin.kt",
+          "sha256": "fd4323d4a27b82fedf34d43fcf911cd55d51e50729e52b1e7f7c4edb224e0dd2",
+          "size": 438
+        },
+        {
+          "path": "ArcanaNarto/provider/src/main/kotlin/dev/arcana/narto/NartoMediaSession.kt",
+          "sha256": "e9f8258eff6294b94e53496cfe1b9ac074757f381490dc5e51543ce99eb8ada7",
+          "size": 13420
+        },
+        {
+          "path": "ArcanaNarto/provider/src/main/kotlin/dev/arcana/narto/NartoProvider.kt",
+          "sha256": "4205534d89e174eb2020f3ff57eec822ee3bb8ed1e1255fce698450598e64744",
+          "size": 28212
+        },
+        {
+          "path": "ArcanaNarto/provider/src/main/kotlin/dev/arcana/narto/NartoProviders.kt",
+          "sha256": "8425893083003f773dd9e8958ba01192980fdd93cb10c7df6c43e581ca80fd9f",
+          "size": 1782
+        },
+        {
+          "path": "ArcanaNarto/settings.gradle.kts",
+          "sha256": "d27f3688537c7e7258d3459615ff705833329b68f5a2a7e092a7e990c44331e8",
+          "size": 258
+        },
+        {
+          "path": "ArcanaNarto/THIRD-PARTY-NOTICES.md",
+          "sha256": "0bbf56bb8a4c39375e80473dea494a66e9f97ac938b2555a94690c2187ca9191",
+          "size": 394
+        },
+        {
+          "path": "ArcanaNarto/JSOUP-LICENSE",
+          "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1",
+          "size": 1102
+        }
+      ],
+      "source_code_unchanged": true
+    }
+  ]
+}

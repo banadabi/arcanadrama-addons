@@ -1,0 +1,34 @@
+[
+  {
+    "status": 1,
+    "name": "(Arcana Drama) Shortİzle",
+    "internalName": "ArcanaShortizle",
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Shortİzle kısa drama kataloğu, bölümleri ve kaynak altyazıları. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaShortizle",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "language": "tr",
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "apiVersion": 1
+  },
+  {
+    "status": 1,
+    "name": "(Arcana Drama) Narto",
+    "internalName": "ArcanaNarto",
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Narto kısa dramaları, MovieBox anime ve film/dizi katalogları; kaynak altyazıları. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaNarto",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "language": "tr",
+    "tvTypes": [
+      "TvSeries",
+      "Anime",
+      "Movie"
+    ],
+    "apiVersion": 1
+  }
+]

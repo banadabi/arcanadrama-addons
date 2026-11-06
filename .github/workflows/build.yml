@@ -1,0 +1,68 @@
+name: ArcanaDrama build candidates
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'Arcana*/**'
+      - 'tools/**'
+      - 'tests/**'
+      - 'addon-metadata.json'
+      - 'release-state.json'
+      - 'build.gradle.kts'
+      - 'settings.gradle.kts'
+      - 'gradle/**'
+      - 'gradlew'
+      - 'gradle.properties'
+      - '.github/workflows/build.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: arcana-candidate-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Read published artifacts
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: builds
+          path: .published
+          persist-credentials: false
+      - name: Focused release-tool checks
+        run: python3 -m unittest discover -s tests -p test_release.py
+      - name: Reuse unchanged artifacts and reserve changed versions
+        id: plan
+        run: python3 tools/build.py --plan --hydrate .published --github-output
+      - name: JDK17
+        if: steps.plan.outputs.build_required == 'true'
+        uses: actions/setup-java@7a6d8a8234af8eb26422e24e3006232cccaa061b # v4.6.0
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Android37 build inputs
+        if: steps.plan.outputs.build_required == 'true'
+        run: '"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-37" "build-tools;37.0.0"'
+      - name: Build only changed inputs
+        if: steps.plan.outputs.build_required == 'true'
+        run: python3 tools/build.py --hydrate .published --build
+      - name: Generate exact catalogue and review inputs
+        run: python3 tools/build.py --hydrate .published --catalogue
+      - name: Save candidate for review
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ArcanaDrama-candidate-${{ github.sha }}
+          path: |
+            dist/
+            review-bundle/
+          if-no-files-found: error
+          retention-days: 7

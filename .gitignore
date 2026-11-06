@@ -1,0 +1,11 @@
+**/build/
+**/.gradle/
+**/.kotlin/
+**/local.properties
+**/__pycache__/
+.release-cache/
+.published/
+dist/
+review-bundle/
+*.lock
+*.zip

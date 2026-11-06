@@ -1,0 +1,6 @@
+{
+  "pluginClassName": "dev.arcana.shortizle.ArcanaShortizlePlugin",
+  "name": "ArcanaShortizle",
+  "version": 4,
+  "requiresResources": false
+}
