@@ -483,6 +483,130 @@
           "size": 262
         }
       ]
+    },
+    {
+      "name": "ArcanaDramaTR",
+      "version": 1,
+      "original_source_zip_sha256": "89642c43a1fc81c0e4135abc5b80c4d5c5d3096f6dc56c3cd7a1bee4597e4663",
+      "source_code_unchanged": true,
+      "change": "First native DramaTR provider; corresponding exact frozen v1 source, stable actual chapter identities and fresh normal play API.",
+      "files": [
+        {
+          "path": "ArcanaDramaTR/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "size": 35149
+        },
+        {
+          "path": "ArcanaDramaTR/README.md",
+          "sha256": "10d78fd9e792456935ea6eea6c75fdb09554559eb9d39bee27a9494e8b0e791c",
+          "size": 1529
+        },
+        {
+          "path": "ArcanaDramaTR/build.gradle.kts",
+          "sha256": "74f299b886d2810d31b3e50d7e83647e3a5dbc656d54de711241659752d29c9b",
+          "size": 131
+        },
+        {
+          "path": "ArcanaDramaTR/compile-api/build.gradle.kts",
+          "sha256": "a224b875a64fa7c16ddc032858861ccf83a0db130cda0a1f62c28574a6fa27cd",
+          "size": 424
+        },
+        {
+          "path": "ArcanaDramaTR/compile-api/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaDramaTR/compile-api/src/main/java/com/lagradost/cloudstream3/plugins/Plugin.kt",
+          "sha256": "ebfe2c713b04d3c241769150da23a45f0a0dbc2ddaa8e3dc745796678f0b0e5e",
+          "size": 950
+        },
+        {
+          "path": "ArcanaDramaTR/gradle/wrapper/gradle-wrapper.jar",
+          "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+          "size": 45457
+        },
+        {
+          "path": "ArcanaDramaTR/gradle/wrapper/gradle-wrapper.properties",
+          "sha256": "3cbe35d0020d8393c73f4cc2572838d1db338dd27885dd4d88c46b4d28f762e0",
+          "size": 281
+        },
+        {
+          "path": "ArcanaDramaTR/gradle.properties",
+          "sha256": "eac3d66466c0e04ae93dc2cea1cbd5a82e86d5907b0ea6f4361693fe27a7e2d0",
+          "size": 98
+        },
+        {
+          "path": "ArcanaDramaTR/gradlew",
+          "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
+          "size": 8618
+        },
+        {
+          "path": "ArcanaDramaTR/libs/jsoup-1.23.2-patched.jar",
+          "sha256": "343ddc0a3c810f6610288d07b7b0c8e977342bd0def38cc77bd3281831c715d0",
+          "size": 532928
+        },
+        {
+          "path": "ArcanaDramaTR/libs/jsoup-LICENSE.txt",
+          "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1",
+          "size": 1102
+        },
+        {
+          "path": "ArcanaDramaTR/manifest.json",
+          "sha256": "9d7ccfc984d42de80d231e1f8b5fcc1b52fb7f50cb4d05502799228030c83311",
+          "size": 129
+        },
+        {
+          "path": "ArcanaDramaTR/provider/build.gradle.kts",
+          "sha256": "3726e7453e208b7605bc79e2772651a4fb6147256f9f0636dc4dc4d6d0f379f3",
+          "size": 901
+        },
+        {
+          "path": "ArcanaDramaTR/provider/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaDramaTR/provider/src/main/kotlin/dev/arcana/dramatr/ArcanaDramaTRPlugin.kt",
+          "sha256": "fcec2438bb469a52431a4f0d64bb04654d9d738d82fbdb6f53335a2985b782e2",
+          "size": 542
+        },
+        {
+          "path": "ArcanaDramaTR/provider/src/main/kotlin/dev/arcana/dramatr/DramaTRContract.kt",
+          "sha256": "6c0548911f0c779cfb7a56733a825ec18b6ac206e3dc6158cdac784847926801",
+          "size": 7211
+        },
+        {
+          "path": "ArcanaDramaTR/provider/src/main/kotlin/dev/arcana/dramatr/DramaTRHttp.kt",
+          "sha256": "667c3c5001bfe2410384200ff5916ef18bdc7fc418cb595e4a640b2da1cb7f3e",
+          "size": 4719
+        },
+        {
+          "path": "ArcanaDramaTR/provider/src/main/kotlin/dev/arcana/dramatr/DramaTRLogin.kt",
+          "sha256": "37d9132ac1232ef3cdf07bc1e8fb378d29eaa6cef2918be95862cb4ef5dee495",
+          "size": 8157
+        },
+        {
+          "path": "ArcanaDramaTR/provider/src/main/kotlin/dev/arcana/dramatr/DramaTRProvider.kt",
+          "sha256": "aa1c5568c4d2438f75940010b6d202454e5650c0c7b07631d53e20b11e376c95",
+          "size": 4115
+        },
+        {
+          "path": "ArcanaDramaTR/provider/src/test/kotlin/dev/arcana/dramatr/DramaTRContractTest.kt",
+          "sha256": "a946bbf283cf05cf740038ea2f6af7fad3de13ba4a2d0885c90e3b94c4a4ae36",
+          "size": 3366
+        },
+        {
+          "path": "ArcanaDramaTR/release-inputs.json",
+          "sha256": "bf4fafb0ad6968d69b502883f214bab80c206c03955a8bc1d60eaa95977a6372",
+          "size": 757
+        },
+        {
+          "path": "ArcanaDramaTR/settings.gradle.kts",
+          "sha256": "0c96b84d914fbddf4567c50fb90290748db1b729c03695440cb0180f9b8c2be9",
+          "size": 260
+        }
+      ]
     }
   ]
 }

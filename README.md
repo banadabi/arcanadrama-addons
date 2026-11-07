@@ -18,6 +18,7 @@ Bağımsız Play ve ArcanaDrama içindeki **Play → Ayarlar → Eklentiler → 
 | (Arcana Drama) Narto | 5 | Kısa dramalar, MovieBox anime ve film/dizi katalogları |
 | (Arcana Drama) İzleGeç | 4 | Kısa dramalar, kaynak altyazıları; Cloudstream ve Arcana76+ içinde kendi hesap girişi |
 | (Arcana Drama) FullDrama | 5 | Dizi kataloğu, gerçek bölümler, doğrudan CDN oynatma ve isteğe bağlı kaynak hesabı |
+| (Arcana Drama) DramaTR | 1 | Sayfalı katalog, gerçek bölüm sırası, doğrudan oynatma ve kaynak altyazıları |
 
 Kaynak hesabı girişi orijinal Cloudstream ve Arcana76+ eklenti ayarlarından yapılır; güncel Arcana sürümü 1.1.46(78)dir. Bağımsız Play1.2.7de bu düğme henüz yoktur; [ayar desteği PRı](https://github.com/liberta09/Play/pull/3) açıktır. Her kullanıcı kendi kaynak hesabıyla cihazında isteğe bağlı giriş yapar.
 
@@ -27,7 +28,7 @@ Bu repoya eklenen **bütün eklentiler** [AGENTS.md kurallarına](AGENTS.md) uym
 
 ## Depo düzeni
 
-- **main:** [ArcanaShortizle](ArcanaShortizle), [ArcanaNarto](ArcanaNarto), [ArcanaIzleGec](ArcanaIzleGec), [ArcanaFullDrama](ArcanaFullDrama) kaynakları, Gradle projeleri ve derleme araçları.
+- **main:** [ArcanaShortizle](ArcanaShortizle), [ArcanaNarto](ArcanaNarto), [ArcanaIzleGec](ArcanaIzleGec), [ArcanaFullDrama](ArcanaFullDrama), [ArcanaDramaTR](ArcanaDramaTR) kaynakları, Gradle projeleri ve derleme araçları.
 - **builds:** kurulacak `.cs3` dosyaları ve tek [plugins.json](https://github.com/banadabi/arcanadrama-addons/blob/builds/plugins.json) listesi.
 - Kurulum adresi sabittir. Paket adresindeki `?v=SHA256` içeriği önbellekten ayırır; gerçek sürüm numarası `version` alanındadır.
 

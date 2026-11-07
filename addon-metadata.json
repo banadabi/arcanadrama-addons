@@ -61,5 +61,20 @@
     ],
     "iconUrl": "https://fulldrama.xyz/assets/uploads/favicon.png",
     "apiVersion": 1
+  },
+  {
+    "status": 1,
+    "name": "(Arcana Drama) DramaTR",
+    "internalName": "ArcanaDramaTR",
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "DramaTR kataloğu, gerçek bölüm bağlantıları ve kaynak altyazıları. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaDramaTR",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "language": "tr",
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "apiVersion": 1
   }
 ]
