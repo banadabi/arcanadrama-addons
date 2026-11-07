@@ -1,0 +1,11 @@
+**/build/
+**/.gradle/
+**/.kotlin/
+**/local.properties
+**/__pycache__/
+**/artifacts/
+**/receipts/
+.release-cache/
+*.cs3
+*.zip
+*.lock

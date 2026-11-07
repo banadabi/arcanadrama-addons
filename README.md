@@ -10,15 +10,16 @@ Cloudstream’e bu depo adresini bir kez ekle:
 https://raw.githubusercontent.com/banadabi/arcanadrama-addons/main/repo.json
 ```
 
-Bağımsız Play ve ArcanaDrama içindeki **Play → Ayarlar → Eklentiler → Eklenti ekle → CloudStream** yolunda da aynı adres kullanılır. Arcana için [1.1.43(75) veya sonrası](https://arcanadrama.download/apk) gerekir.
+Bağımsız Play ve ArcanaDrama içindeki **Play → Ayarlar → Eklentiler → Eklenti ekle → CloudStream** yolunda da aynı adres kullanılır. Arcana için [güncel APK](https://arcanadrama.download/apk) kullanılabilir; kaynak hesabı ayarları 76 ve sonrası sürümlerde bulunur.
 
 | Eklenti | Sürüm | Kapsam |
 | --- | --- | --- |
 | (Arcana Drama) Shortİzle | 4 | Kısa dramalar, bölümler ve kaynak altyazıları |
 | (Arcana Drama) Narto | 5 | Kısa dramalar, MovieBox anime ve film/dizi katalogları |
-| (Arcana Drama) İzleGeç | 4 | Kısa dramalar, kaynak altyazıları; Cloudstream’de kendi hesap girişi |
+| (Arcana Drama) İzleGeç | 4 | Kısa dramalar, kaynak altyazıları; Cloudstream ve Arcana76+ içinde kendi hesap girişi |
+| (Arcana Drama) FullDrama | 5 | Dizi kataloğu, gerçek bölümler, doğrudan CDN oynatma ve isteğe bağlı kaynak hesabı |
 
-İzleGeç hesap girişi orijinal Cloudstream’in eklenti ayarlarından yapılır. Mevcut Play1.2.7/Arcana75’te hesap ayar düğmesi yoktur; bu sürümlerde misafir bölümleri desteklenir.
+Kaynak hesabı girişi orijinal Cloudstream ve Arcana76+ eklenti ayarlarından yapılır; güncel Arcana sürümü 1.1.46(78)dir. Bağımsız Play1.2.7de bu düğme henüz yoktur; [ayar desteği PRı](https://github.com/liberta09/Play/pull/3) açıktır. Her kullanıcı kendi kaynak hesabıyla cihazında isteğe bağlı giriş yapar.
 
 ## Zorunlu repo kuralı
 
@@ -26,7 +27,7 @@ Bu repoya eklenen **bütün eklentiler** [AGENTS.md kurallarına](AGENTS.md) uym
 
 ## Depo düzeni
 
-- **main:** [ArcanaShortizle](ArcanaShortizle), [ArcanaNarto](ArcanaNarto), [ArcanaIzleGec](ArcanaIzleGec) kaynakları, Gradle projeleri ve derleme araçları.
+- **main:** [ArcanaShortizle](ArcanaShortizle), [ArcanaNarto](ArcanaNarto), [ArcanaIzleGec](ArcanaIzleGec), [ArcanaFullDrama](ArcanaFullDrama) kaynakları, Gradle projeleri ve derleme araçları.
 - **builds:** kurulacak `.cs3` dosyaları ve tek [plugins.json](https://github.com/banadabi/arcanadrama-addons/blob/builds/plugins.json) listesi.
 - Kurulum adresi sabittir. Paket adresindeki `?v=SHA256` içeriği önbellekten ayırır; gerçek sürüm numarası `version` alanındadır.
 

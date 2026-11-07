@@ -38,12 +38,28 @@
     "authors": [
       "ArcanaDrama"
     ],
-    "description": "İzleGeç kısa dramaları, kaynak bölümleri ve altyazıları. Üyelik girişi: orijinal Cloudstream eklenti ayarları. Play1.2.7/Arcana75 misafir bölümlerini destekler. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaIzleGec",
+    "description": "İzleGeç kısa dramaları, kaynak bölümleri ve altyazıları. Üyelik girişi: orijinal Cloudstream ve Arcana76+ eklenti ayarları. Play1.2.7 misafir bölümlerini destekler. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaIzleGec",
     "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
     "language": "tr",
     "tvTypes": [
       "TvSeries"
     ],
+    "apiVersion": 1
+  },
+  {
+    "status": 1,
+    "name": "(Arcana Drama) FullDrama",
+    "internalName": "ArcanaFullDrama",
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "FullDrama dizileri, gerçek bölümler ve doğrudan CDN oynatma. İsteğe bağlı hesap girişi: Cloudstream ve Arcana76+ eklenti ayarları. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaFullDrama",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "language": "tr",
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "iconUrl": "https://fulldrama.xyz/assets/uploads/favicon.png",
     "apiVersion": 1
   }
 ]

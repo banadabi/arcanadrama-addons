@@ -348,6 +348,141 @@
           "size": 950
         }
       ]
+    },
+    {
+      "name": "ArcanaFullDrama",
+      "version": 5,
+      "original_source_zip_sha256": "e164a389358cc3afcd2aab1e575b80ecbef3fb780dc53e71fe61b9356d5ae1fc",
+      "source_code_unchanged": true,
+      "source_doc_curated": true,
+      "change": "First public FullDrama release; same frozen v5 artifact and reviewed executable source. README product wording only.",
+      "files": [
+        {
+          "path": "ArcanaFullDrama/.gitignore",
+          "sha256": "fe0b875e88123ab583341f947cdddd01bb41145197e21eeab464e7cbed371f79",
+          "size": 132
+        },
+        {
+          "path": "ArcanaFullDrama/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "size": 35149
+        },
+        {
+          "path": "ArcanaFullDrama/README.md",
+          "sha256": "5c4c75d25e0a7670a05f5b70bb71b7c14def62035c7470bc627e0b374bdaa963",
+          "size": 4385
+        },
+        {
+          "path": "ArcanaFullDrama/build.gradle.kts",
+          "sha256": "74f299b886d2810d31b3e50d7e83647e3a5dbc656d54de711241659752d29c9b",
+          "size": 131
+        },
+        {
+          "path": "ArcanaFullDrama/compile-api/build.gradle.kts",
+          "sha256": "a224b875a64fa7c16ddc032858861ccf83a0db130cda0a1f62c28574a6fa27cd",
+          "size": 424
+        },
+        {
+          "path": "ArcanaFullDrama/compile-api/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaFullDrama/compile-api/src/main/java/com/lagradost/cloudstream3/plugins/Plugin.kt",
+          "sha256": "ebfe2c713b04d3c241769150da23a45f0a0dbc2ddaa8e3dc745796678f0b0e5e",
+          "size": 950
+        },
+        {
+          "path": "ArcanaFullDrama/gradle/wrapper/gradle-wrapper.jar",
+          "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+          "size": 45457
+        },
+        {
+          "path": "ArcanaFullDrama/gradle/wrapper/gradle-wrapper.properties",
+          "sha256": "3cbe35d0020d8393c73f4cc2572838d1db338dd27885dd4d88c46b4d28f762e0",
+          "size": 281
+        },
+        {
+          "path": "ArcanaFullDrama/gradle.properties",
+          "sha256": "eac3d66466c0e04ae93dc2cea1cbd5a82e86d5907b0ea6f4361693fe27a7e2d0",
+          "size": 98
+        },
+        {
+          "path": "ArcanaFullDrama/gradlew",
+          "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
+          "size": 8618
+        },
+        {
+          "path": "ArcanaFullDrama/libs/jsoup-1.23.2-patched.jar",
+          "sha256": "343ddc0a3c810f6610288d07b7b0c8e977342bd0def38cc77bd3281831c715d0",
+          "size": 532928
+        },
+        {
+          "path": "ArcanaFullDrama/libs/jsoup-LICENSE.txt",
+          "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1",
+          "size": 1102
+        },
+        {
+          "path": "ArcanaFullDrama/manifest.json",
+          "sha256": "3c2321fce689c56a8cabeb61d941650ff3f435887922e0453518fe2d43cccfee",
+          "size": 128
+        },
+        {
+          "path": "ArcanaFullDrama/provider/build.gradle.kts",
+          "sha256": "f149468062724adf08c9f47b4e1e9de6b05536bbfd1771340667fb4207031a42",
+          "size": 903
+        },
+        {
+          "path": "ArcanaFullDrama/provider/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaFullDrama/provider/src/main/kotlin/dev/arcana/fulldrama/ArcanaFullDramaPlugin.kt",
+          "sha256": "274749b18d17d4f8bfa954e4fd90d076ac7376366e1c9266adf07b1874e58451",
+          "size": 582
+        },
+        {
+          "path": "ArcanaFullDrama/provider/src/main/kotlin/dev/arcana/fulldrama/FullDramaContract.kt",
+          "sha256": "6bcdc018688d3eda1142886025bbfceef064cdfd0ddf436b06c6d0f4136e5e7c",
+          "size": 9737
+        },
+        {
+          "path": "ArcanaFullDrama/provider/src/main/kotlin/dev/arcana/fulldrama/FullDramaHttp.kt",
+          "sha256": "1e8cd850059a95bc7ec558f68914ee0420303d114328f73e953f3199dd9a8b4b",
+          "size": 11000
+        },
+        {
+          "path": "ArcanaFullDrama/provider/src/main/kotlin/dev/arcana/fulldrama/FullDramaLogin.kt",
+          "sha256": "fafece1fcbd4f3bd594f96a4694d3850cf9111f80d8be0a07f5ce13b76461e3c",
+          "size": 8358
+        },
+        {
+          "path": "ArcanaFullDrama/provider/src/main/kotlin/dev/arcana/fulldrama/FullDramaProvider.kt",
+          "sha256": "e4c3e1cc60c53a3f51a41e1291f75f2345bc8e0afc60e1b067fd7c3017d096f2",
+          "size": 11585
+        },
+        {
+          "path": "ArcanaFullDrama/provider/src/main/kotlin/dev/arcana/fulldrama/FullDramaSession.kt",
+          "sha256": "ec572b1fcdaddc816d5f9e897df964881d6b7eae9cdcab630c3e60577ed92388",
+          "size": 9050
+        },
+        {
+          "path": "ArcanaFullDrama/provider/src/test/kotlin/dev/arcana/fulldrama/FullDramaContractTest.kt",
+          "sha256": "669062becd594a8809830afdf53a62b980b042d1fde80b983e610cc6db7176c4",
+          "size": 5982
+        },
+        {
+          "path": "ArcanaFullDrama/release-inputs.json",
+          "sha256": "bf4fafb0ad6968d69b502883f214bab80c206c03955a8bc1d60eaa95977a6372",
+          "size": 757
+        },
+        {
+          "path": "ArcanaFullDrama/settings.gradle.kts",
+          "sha256": "6e9d32f061de87a789a00e855b51c5710e6ccee5aaeda5b33c93cb6ad2d8bad2",
+          "size": 262
+        }
+      ]
     }
   ]
 }
