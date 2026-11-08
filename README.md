@@ -1,17 +1,27 @@
 # ArcanaDrama
 
-Cloudstream dağıtım dosyaları: **ArcanaShortizle.cs3**, **ArcanaNarto.cs3**, **ArcanaIzleGec.cs3**, **ArcanaFullDrama.cs3**, **ArcanaDramaTR.cs3** ve tek **plugins.json** listesi. Paket URL’leri `?v=SHA256` içerir; sürüm/hash/bayt değerleri dosyalardan üretilir.
+## Depo adresi
 
-Sabit kurulum: https://raw.githubusercontent.com/banadabi/arcanadrama-addons/main/repo.json
+```text
+https://raw.githubusercontent.com/banadabi/arcanadrama-addons/main/repo.json
+```
 
-Kaynak ve derleme projeleri [ana dalda](https://github.com/banadabi/arcanadrama-addons): [Shortİzle](https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaShortizle), [Narto](https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaNarto). [GPL-3.0](LICENSE).
+## Eklentiler
 
-Geliştirici **ArcanaDrama**. [☕ Buy Me a Coffee — banadabi](https://www.buymeacoffee.com/banadabi).
+| Eklenti | Sürüm | Dil seçenekleri |
+| --- | --- | --- |
+| Arcana Drama Shortİzle | 4 | Türkçe altyazı. |
+| Arcana Drama Narto | 5 | Türkçe altyazı ve çoklu altyazı. |
+| Arcana Drama İzleGeç | 4 | Türkçe dublaj ve Türkçe altyazı. |
+| Arcana Drama FullDrama | 5 | Türkçe dublaj ve Türkçe altyazı. |
+| Arcana Drama TR | 1 | Türkçe dublaj ve Türkçe altyazı. |
+| Arcana Drama Dizilerim | 3 | Türkçe altyazı. |
+| Arcana Drama Vakti | 1 | Türkçe dublaj ve Türkçe altyazı. |
 
-[İzleGeç kaynak ve hesap girişi açıklaması](https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaIzleGec). Üyelik ayarları orijinal Cloudstream ve Arcana76+ içinde açılır; bağımsız Play1.2.7de bu ayar düğmesi henüz yoktur.
+## Lisans
 
-[FullDrama kaynakları](https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaFullDrama) aynı ana daldadır; yeni kaynak için depo adresi değişmez.
+[GPL-3.0](LICENSE)
 
-[DramaTR kaynakları](https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaDramaTR) aynı ana daldadır; kaynak altyazıları ve isteğe bağlı kendi kaynak hesabı desteklenir.
+## Destek ol
 
-[DramaDizilerim kaynakları](https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaDramaDizilerim): sürüm3, gerçek bölüm sırası, HLS/MP4 ve kaynak altyazıları.
+[☕ Buy Me a Coffee — banadabi](https://www.buymeacoffee.com/banadabi)
