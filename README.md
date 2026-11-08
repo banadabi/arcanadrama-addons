@@ -10,13 +10,14 @@ https://raw.githubusercontent.com/banadabi/arcanadrama-addons/main/repo.json
 
 | Eklenti | Sürüm | Dil seçenekleri |
 | --- | --- | --- |
-| Arcana Drama Shortİzle | 4 | Türkçe altyazı. |
-| Arcana Drama Narto | 5 | Türkçe altyazı ve çoklu altyazı. |
-| Arcana Drama İzleGeç | 4 | Türkçe dublaj ve Türkçe altyazı. |
-| Arcana Drama FullDrama | 5 | Türkçe dublaj ve Türkçe altyazı. |
-| Arcana Drama TR | 1 | Türkçe dublaj ve Türkçe altyazı. |
-| Arcana Drama Dizilerim | 3 | Türkçe altyazı. |
-| Arcana Drama Vakti | 1 | Türkçe dublaj ve Türkçe altyazı. |
+| (Arcana Drama) Shortİzle | 4 | Türkçe altyazı. |
+| (Arcana Drama) Narto | 5 | Türkçe altyazı ve çoklu altyazı. |
+| (Arcana Drama) İzleGeç | 4 | Türkçe dublaj ve Türkçe altyazı. |
+| (Arcana Drama) FullDrama | 5 | Türkçe dublaj ve Türkçe altyazı. |
+| (Arcana Drama) TR | 1 | Türkçe dublaj ve Türkçe altyazı. |
+| (Arcana Drama) Dizilerim | 3 | Türkçe altyazı. |
+| (Arcana Drama) Vakti | 1 | Türkçe dublaj ve Türkçe altyazı. |
+| (Arcana Drama) Cix | 20 | Türkçe dublaj ve Türkçe altyazı. |
 
 ## Lisans
 
