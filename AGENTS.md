@@ -1,3 +1,7 @@
+# Adlandırma — owner 9 Kasım son talimat
+
+Tüm eklenti liste/README ve uygulama kaynak adları `(Arcana Drama) Eklenti Adı` önekiyle başlar. Bu, aşağıdaki parantezsiz görünür önek kararını aşar. Tam kaynak domaini kullanılmaz; açıklamalar yalnız doğrulanmış dil bilgisi taşır. Eski doğru API adları/binaryler korunur; Cix runtime ad düzeltmesi yeni exact sürümdür.
+
 # Son kullanıcı görünümü — owner 8 Kasım son talimat
 
 Public root/builds README tablosu ve eklenti listesi `name`/`description` alanlarında kısa marka adları ve yalnız doğrulanmış dil seçenekleri kullanılır: **Arcana Drama TR**, **Arcana Drama FullDrama** gibi. Tam kaynak domainleri, MovieBox/uygulama/platform/hesap/sürüm/CDN/HLS/MP4 açıklamaları yazılmaz. Kısa ad ön eki `Arcana Drama ` olur; bu son talimat eski parantezli liste adlandırmasını aşar. InternalName/class/filename/version/hash/bayt/URL ve kaynak platform/kategori/tür/plot alanları aynen korunur. Kabul edilmiş CS3 paketlerinin yerleşik eski parantezli API adları zaten domain içermez; sadece repo görünümü için binary rebuild/bump/retest yapılmaz. Kaynak/derleme/lisans teknik belgeleri bu son kullanıcı açıklama alanları değildir ve korunur. Genel kabul çifti orijinalCloudstream+LIVEsonArcanaPlay; belirli exact paket için açık owner doğrudan yayın talimatı kendi kapsamıyla kaydedilir, yapılmamış bağımsız test uydurulmaz.

@@ -1,7 +1,7 @@
 [
   {
     "status": 1,
-    "name": "Arcana Drama Shortİzle",
+    "name": "(Arcana Drama) Shortİzle",
     "internalName": "ArcanaShortizle",
     "authors": [
       "ArcanaDrama"
@@ -16,7 +16,7 @@
   },
   {
     "status": 1,
-    "name": "Arcana Drama Narto",
+    "name": "(Arcana Drama) Narto",
     "internalName": "ArcanaNarto",
     "authors": [
       "ArcanaDrama"
@@ -33,7 +33,7 @@
   },
   {
     "status": 1,
-    "name": "Arcana Drama İzleGeç",
+    "name": "(Arcana Drama) İzleGeç",
     "internalName": "ArcanaIzleGec",
     "authors": [
       "ArcanaDrama"
@@ -48,7 +48,7 @@
   },
   {
     "status": 1,
-    "name": "Arcana Drama FullDrama",
+    "name": "(Arcana Drama) FullDrama",
     "internalName": "ArcanaFullDrama",
     "authors": [
       "ArcanaDrama"
@@ -64,7 +64,7 @@
   },
   {
     "status": 1,
-    "name": "Arcana Drama TR",
+    "name": "(Arcana Drama) TR",
     "internalName": "ArcanaDramaTR",
     "authors": [
       "ArcanaDrama"
@@ -79,7 +79,7 @@
   },
   {
     "internalName": "ArcanaDramaDizilerim",
-    "name": "Arcana Drama Dizilerim",
+    "name": "(Arcana Drama) Dizilerim",
     "description": "Türkçe altyazı.",
     "authors": [
       "ArcanaDrama"
@@ -100,7 +100,22 @@
     "description": "Türkçe dublaj ve Türkçe altyazı.",
     "internalName": "ArcanaDramaVakti",
     "language": "tr",
-    "name": "Arcana Drama Vakti",
+    "name": "(Arcana Drama) Vakti",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ]
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
+    "internalName": "ArcanaDramacix",
+    "language": "tr",
+    "name": "(Arcana Drama) Cix",
     "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
     "status": 1,
     "tvTypes": [

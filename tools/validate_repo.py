@@ -14,7 +14,7 @@ import zipfile
 
 REPOSITORY = "https://github.com/banadabi/arcanadrama-addons"
 BASE = "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds"
-PREFIX = "Arcana Drama "
+PREFIX = "(Arcana Drama) "
 REQUIRED = {"url", "status", "version", "name", "internalName", "authors", "description",
             "fileSize", "repositoryUrl", "language", "tvTypes", "apiVersion", "fileHash"}
 EXCLUDED = {".git", ".gradle", ".kotlin", "build", ".release-cache", "__pycache__",

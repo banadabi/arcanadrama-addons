@@ -858,6 +858,160 @@
           "size": 263
         }
       ]
+    },
+    {
+      "name": "ArcanaDramacix",
+      "version": 20,
+      "artifact_sha256": "ec6051b06299e3909a883da27659ecf6c66419ac6b6a99a720600cc62cc9b7af",
+      "source_fingerprint": "c4454134389c5da8d383627721d2981c7dce905a7423c657bada2e9ebcb04d5d",
+      "change": "Display names only: provider and settings title use (Arcana Drama) Cix; frozen18 behaviour unchanged.",
+      "files": [
+        {
+          "path": "ArcanaDramacix/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "size": 35149
+        },
+        {
+          "path": "ArcanaDramacix/README.md",
+          "sha256": "2b253d06e31c26eb12786a7f2615c8a8d651cfb344a9951149e936adf5bcc74a",
+          "size": 1861
+        },
+        {
+          "path": "ArcanaDramacix/build.gradle.kts",
+          "sha256": "74f299b886d2810d31b3e50d7e83647e3a5dbc656d54de711241659752d29c9b",
+          "size": 131
+        },
+        {
+          "path": "ArcanaDramacix/compile-api/build.gradle.kts",
+          "sha256": "a224b875a64fa7c16ddc032858861ccf83a0db130cda0a1f62c28574a6fa27cd",
+          "size": 424
+        },
+        {
+          "path": "ArcanaDramacix/compile-api/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaDramacix/compile-api/src/main/java/com/lagradost/cloudstream3/plugins/Plugin.kt",
+          "sha256": "ebfe2c713b04d3c241769150da23a45f0a0dbc2ddaa8e3dc745796678f0b0e5e",
+          "size": 950
+        },
+        {
+          "path": "ArcanaDramacix/gradle.properties",
+          "sha256": "eac3d66466c0e04ae93dc2cea1cbd5a82e86d5907b0ea6f4361693fe27a7e2d0",
+          "size": 98
+        },
+        {
+          "path": "ArcanaDramacix/gradle/wrapper/gradle-wrapper.jar",
+          "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+          "size": 45457
+        },
+        {
+          "path": "ArcanaDramacix/gradle/wrapper/gradle-wrapper.properties",
+          "sha256": "3cbe35d0020d8393c73f4cc2572838d1db338dd27885dd4d88c46b4d28f762e0",
+          "size": 281
+        },
+        {
+          "path": "ArcanaDramacix/gradlew",
+          "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
+          "size": 8618
+        },
+        {
+          "path": "ArcanaDramacix/libs/jsoup-1.23.2-patched.jar",
+          "sha256": "343ddc0a3c810f6610288d07b7b0c8e977342bd0def38cc77bd3281831c715d0",
+          "size": 532928
+        },
+        {
+          "path": "ArcanaDramacix/libs/jsoup-LICENSE.txt",
+          "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1",
+          "size": 1102
+        },
+        {
+          "path": "ArcanaDramacix/manifest.json",
+          "sha256": "efbf75b366d650715a911e70516528ef8db298e2ff77580132df4a0d5717dc5b",
+          "size": 126
+        },
+        {
+          "path": "ArcanaDramacix/provider/build.gradle.kts",
+          "sha256": "d97ea08a0a44e19d8b801738357c3d8ddddde87621877de16f801f1cb7742b12",
+          "size": 963
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/main/kotlin/dev/arcana/dramacix/ArcanaDramacixPlugin.kt",
+          "sha256": "2542a54581058e97659d650a4942d719aa4863c61ba68bf15940bf75d2103e26",
+          "size": 565
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/main/kotlin/dev/arcana/dramacix/DramacixCaption.kt",
+          "sha256": "bd27e928ce6e018ccef48c9116862b89b3d5f26f59276ccfdb4a594e42d7a034",
+          "size": 1008
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/main/kotlin/dev/arcana/dramacix/DramacixCatalogue.kt",
+          "sha256": "bb02d18be2d091db4caff10affdb4649b7dcf14530a1360aa890e4a5974b8bb8",
+          "size": 5393
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/main/kotlin/dev/arcana/dramacix/DramacixContract.kt",
+          "sha256": "83c742c279274b046af3c73e7a19efe752a5d680bcc9f8c119fe2bf50bbbd5d7",
+          "size": 12154
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/main/kotlin/dev/arcana/dramacix/DramacixHttpsTransport.kt",
+          "sha256": "6dfa5005c4bdebd19c7f4fe499c0573dc9944339ca0012fb298ad5eec7c2a5c9",
+          "size": 10802
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/main/kotlin/dev/arcana/dramacix/DramacixLogin.kt",
+          "sha256": "d5706ca739a2aaf38c09d4233f6f2bb42b20bf6b557f18d531a6b7ee990cd3ad",
+          "size": 8107
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/main/kotlin/dev/arcana/dramacix/DramacixMedia.kt",
+          "sha256": "aa773c35362f96338348267ac8befd78b7c9cd441affafdcb9a9fd1651e95a1b",
+          "size": 6796
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/main/kotlin/dev/arcana/dramacix/DramacixProvider.kt",
+          "sha256": "67f91c9061e97f164f85deb2d4e1460018e66705ab9c0139a35bb16d9aa410ec",
+          "size": 7453
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/main/kotlin/dev/arcana/dramacix/DramacixSession.kt",
+          "sha256": "52b8cd3b9d7a5cbc00a9e02eb3dc53b23ea46dc95fdd6b2f66c397a8af14513b",
+          "size": 15046
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/main/kotlin/dev/arcana/dramacix/DramacixSettings.kt",
+          "sha256": "93fa4576169787d8bc48f051d9c4af65f4c0700fec0e96fab085aebf6fddcab0",
+          "size": 4242
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/main/kotlin/dev/arcana/dramacix/DramacixTsPrefix.kt",
+          "sha256": "6d8407d360969bcabd8dc6349d4f2d62df7e0e44c57738500b0470755772da1c",
+          "size": 3163
+        },
+        {
+          "path": "ArcanaDramacix/provider/src/test/kotlin/dev/arcana/dramacix/DramacixContractTest.kt",
+          "sha256": "1b50c60ad59c53903c59e8407ef5ad7e81d137cc44b83286e0bab513d1067cf6",
+          "size": 16901
+        },
+        {
+          "path": "ArcanaDramacix/release-inputs.json",
+          "sha256": "bf4fafb0ad6968d69b502883f214bab80c206c03955a8bc1d60eaa95977a6372",
+          "size": 757
+        },
+        {
+          "path": "ArcanaDramacix/settings.gradle.kts",
+          "sha256": "37c8443ee37c6e6e2f0c1f5fece15989351ef6d28147d4bc048ca080bf08404f",
+          "size": 261
+        }
+      ]
     }
   ]
 }
