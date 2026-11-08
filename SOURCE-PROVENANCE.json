@@ -733,6 +733,131 @@
           "size": 267
         }
       ]
+    },
+    {
+      "name": "ArcanaDramaVakti",
+      "version": 1,
+      "artifact_sha256": "8ef656f93f3e58b662d3a585b346d95d36112b910651f176faeb48657f534fbd",
+      "source_code_unchanged": true,
+      "source_fingerprint": "47687628a46d4fd43a1d6b4606b46a65a93dd42f157000f952cbc51a928d59b3",
+      "change": "First public release of the unchanged accepted frozen DramaVakti v1. Repo display metadata only uses short names and verified language options.",
+      "files": [
+        {
+          "path": "ArcanaDramaVakti/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "size": 35149
+        },
+        {
+          "path": "ArcanaDramaVakti/README.md",
+          "sha256": "9b20bd597137d9b3b97d3ea6897928fcf86eb640885c3d7ab71fc69390566721",
+          "size": 1849
+        },
+        {
+          "path": "ArcanaDramaVakti/build.gradle.kts",
+          "sha256": "74f299b886d2810d31b3e50d7e83647e3a5dbc656d54de711241659752d29c9b",
+          "size": 131
+        },
+        {
+          "path": "ArcanaDramaVakti/compile-api/build.gradle.kts",
+          "sha256": "a224b875a64fa7c16ddc032858861ccf83a0db130cda0a1f62c28574a6fa27cd",
+          "size": 424
+        },
+        {
+          "path": "ArcanaDramaVakti/compile-api/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaDramaVakti/compile-api/src/main/java/com/lagradost/cloudstream3/plugins/Plugin.kt",
+          "sha256": "ebfe2c713b04d3c241769150da23a45f0a0dbc2ddaa8e3dc745796678f0b0e5e",
+          "size": 950
+        },
+        {
+          "path": "ArcanaDramaVakti/gradle/wrapper/gradle-wrapper.jar",
+          "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+          "size": 45457
+        },
+        {
+          "path": "ArcanaDramaVakti/gradle/wrapper/gradle-wrapper.properties",
+          "sha256": "3cbe35d0020d8393c73f4cc2572838d1db338dd27885dd4d88c46b4d28f762e0",
+          "size": 281
+        },
+        {
+          "path": "ArcanaDramaVakti/gradle.properties",
+          "sha256": "eac3d66466c0e04ae93dc2cea1cbd5a82e86d5907b0ea6f4361693fe27a7e2d0",
+          "size": 98
+        },
+        {
+          "path": "ArcanaDramaVakti/gradlew",
+          "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
+          "size": 8618
+        },
+        {
+          "path": "ArcanaDramaVakti/libs/jsoup-1.23.2-patched.jar",
+          "sha256": "343ddc0a3c810f6610288d07b7b0c8e977342bd0def38cc77bd3281831c715d0",
+          "size": 532928
+        },
+        {
+          "path": "ArcanaDramaVakti/libs/jsoup-LICENSE.txt",
+          "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1",
+          "size": 1102
+        },
+        {
+          "path": "ArcanaDramaVakti/manifest.json",
+          "sha256": "7a1ad0a648a3ed2fc1b62fcda23b4121a1a4a5217469786720e66be8978ef2fd",
+          "size": 138
+        },
+        {
+          "path": "ArcanaDramaVakti/provider/build.gradle.kts",
+          "sha256": "6755e97f7898d4a8e09070b24a0536a1b4a39ed843796031f36ffd7f8ec9144d",
+          "size": 904
+        },
+        {
+          "path": "ArcanaDramaVakti/provider/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaDramaVakti/provider/src/main/kotlin/dev/arcana/dramavakti/ArcanaDramaVaktiPlugin.kt",
+          "sha256": "4fffcd8f99cc2268ae6fa9adf7fe2de649b673c6ea53fc1c5fbe3f06c6eca436",
+          "size": 571
+        },
+        {
+          "path": "ArcanaDramaVakti/provider/src/main/kotlin/dev/arcana/dramavakti/DramaVaktiContract.kt",
+          "sha256": "849fd0a8fe883f6c0ab2361c2ef41350d7fafe7bda7f45dec2cad22270eeb101",
+          "size": 10115
+        },
+        {
+          "path": "ArcanaDramaVakti/provider/src/main/kotlin/dev/arcana/dramavakti/DramaVaktiHttp.kt",
+          "sha256": "7b763ea6ceff692ef44e09d5e4032d21b1da5ce163cac708fdf0150eefb63041",
+          "size": 10754
+        },
+        {
+          "path": "ArcanaDramaVakti/provider/src/main/kotlin/dev/arcana/dramavakti/DramaVaktiLogin.kt",
+          "sha256": "d6c9f3337b85854424f64359355f62ca52f167c3fcb8489425c23516d91d3238",
+          "size": 8597
+        },
+        {
+          "path": "ArcanaDramaVakti/provider/src/main/kotlin/dev/arcana/dramavakti/DramaVaktiProvider.kt",
+          "sha256": "2730b0d07dc5e9008bdeb392bae8fdfe8c9ce8102da17261ccc8c3be49d45d4f",
+          "size": 4997
+        },
+        {
+          "path": "ArcanaDramaVakti/provider/src/test/kotlin/dev/arcana/dramavakti/DramaVaktiContractTest.kt",
+          "sha256": "b635c6b656cdefab8f38b380a2bdf654615b10e316457af36da14e17f10fc287",
+          "size": 4829
+        },
+        {
+          "path": "ArcanaDramaVakti/release-inputs.json",
+          "sha256": "bf4fafb0ad6968d69b502883f214bab80c206c03955a8bc1d60eaa95977a6372",
+          "size": 757
+        },
+        {
+          "path": "ArcanaDramaVakti/settings.gradle.kts",
+          "sha256": "4e5941847cee1a1dab0f22f78fe898cbaedaa4acd5f2da53c7bdfa47cdeabb56",
+          "size": 263
+        }
+      ]
     }
   ]
 }

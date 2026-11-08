@@ -14,7 +14,7 @@ import zipfile
 
 REPOSITORY = "https://github.com/banadabi/arcanadrama-addons"
 BASE = "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds"
-PREFIX = "(Arcana Drama) "
+PREFIX = "Arcana Drama "
 REQUIRED = {"url", "status", "version", "name", "internalName", "authors", "description",
             "fileSize", "repositoryUrl", "language", "tvTypes", "apiVersion", "fileHash"}
 EXCLUDED = {".git", ".gradle", ".kotlin", "build", ".release-cache", "__pycache__",
@@ -107,6 +107,11 @@ def _metadata(entry):
         raise ValueError("Plugin version/apiVersion/fileSize must be positive integers")
     if type(entry["status"]) is not int or entry["status"] not in range(4):
         raise ValueError("Plugin status must be a known value 0..3")
+    if re.search(r"https?://|www[.]|\b[a-z0-9-]+[.](?:com|net|org|xyz|io|tv|ai|online|site|download|co|tr)\b", entry["name"], re.I):
+        raise ValueError("Plugin display name must not contain a source domain")
+    allowed_descriptions = {"Türkçe dublaj.", "Türkçe altyazı.", "Türkçe dublaj ve Türkçe altyazı.", "Türkçe altyazı ve çoklu altyazı.", "Türkçe dublaj, Türkçe altyazı ve çoklu altyazı."}
+    if entry["description"] not in allowed_descriptions:
+        raise ValueError("Plugin description must contain only verified language options")
     if not _text(entry["description"]) or not _text(entry["language"]):
         raise ValueError("Plugin description and language are required")
     if not isinstance(entry["tvTypes"], list) or not entry["tvTypes"] or not all(map(_text, entry["tvTypes"])):

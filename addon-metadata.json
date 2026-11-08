@@ -1,12 +1,12 @@
 [
   {
     "status": 1,
-    "name": "(Arcana Drama) Shortİzle",
+    "name": "Arcana Drama Shortİzle",
     "internalName": "ArcanaShortizle",
     "authors": [
       "ArcanaDrama"
     ],
-    "description": "Shortİzle kısa drama kataloğu, bölümleri ve kaynak altyazıları. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaShortizle",
+    "description": "Türkçe altyazı.",
     "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
     "language": "tr",
     "tvTypes": [
@@ -16,12 +16,12 @@
   },
   {
     "status": 1,
-    "name": "(Arcana Drama) Narto",
+    "name": "Arcana Drama Narto",
     "internalName": "ArcanaNarto",
     "authors": [
       "ArcanaDrama"
     ],
-    "description": "Narto kısa dramaları, MovieBox anime ve film/dizi katalogları; kaynak altyazıları. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaNarto",
+    "description": "Türkçe altyazı ve çoklu altyazı.",
     "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
     "language": "tr",
     "tvTypes": [
@@ -33,12 +33,12 @@
   },
   {
     "status": 1,
-    "name": "(Arcana Drama) İzleGeç",
+    "name": "Arcana Drama İzleGeç",
     "internalName": "ArcanaIzleGec",
     "authors": [
       "ArcanaDrama"
     ],
-    "description": "İzleGeç kısa dramaları, kaynak bölümleri ve altyazıları. Üyelik girişi: orijinal Cloudstream ve Arcana76+ eklenti ayarları. Play1.2.7 misafir bölümlerini destekler. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaIzleGec",
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
     "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
     "language": "tr",
     "tvTypes": [
@@ -48,12 +48,12 @@
   },
   {
     "status": 1,
-    "name": "(Arcana Drama) FullDrama",
+    "name": "Arcana Drama FullDrama",
     "internalName": "ArcanaFullDrama",
     "authors": [
       "ArcanaDrama"
     ],
-    "description": "FullDrama dizileri, gerçek bölümler ve doğrudan CDN oynatma. İsteğe bağlı hesap girişi: Cloudstream ve Arcana76+ eklenti ayarları. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaFullDrama",
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
     "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
     "language": "tr",
     "tvTypes": [
@@ -64,12 +64,12 @@
   },
   {
     "status": 1,
-    "name": "(Arcana Drama) DramaTR",
+    "name": "Arcana Drama TR",
     "internalName": "ArcanaDramaTR",
     "authors": [
       "ArcanaDrama"
     ],
-    "description": "DramaTR kataloğu, gerçek bölüm bağlantıları ve kaynak altyazıları. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaDramaTR",
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
     "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
     "language": "tr",
     "tvTypes": [
@@ -79,8 +79,8 @@
   },
   {
     "internalName": "ArcanaDramaDizilerim",
-    "name": "(Arcana Drama) DramaDizilerim",
-    "description": "DramaDizilerim kataloğu, gerçek bölümler, kaynak HLS/MP4 ve yayımlanmış uyumluluk akışları. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaDramaDizilerim",
+    "name": "Arcana Drama Dizilerim",
+    "description": "Türkçe altyazı.",
     "authors": [
       "ArcanaDrama"
     ],
@@ -91,5 +91,20 @@
     "apiVersion": 1,
     "status": 1,
     "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons"
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
+    "internalName": "ArcanaDramaVakti",
+    "language": "tr",
+    "name": "Arcana Drama Vakti",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ]
   }
 ]

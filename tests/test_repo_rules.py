@@ -35,8 +35,8 @@ class RepoRulesTests(unittest.TestCase):
         rules._RELEASE.pack_cs3(self.manifest_path, dex, artifact)
         data = artifact.read_bytes()
         digest = hashlib.sha256(data).hexdigest()
-        self.entries = [{"name": "(Arcana Drama) Örnek", "internalName": "ArcanaExample",
-                         "authors": ["ArcanaDrama"], "description": "Gerçek kaynak açıklaması",
+        self.entries = [{"name": "Arcana Drama Örnek", "internalName": "ArcanaExample",
+                         "authors": ["ArcanaDrama"], "description": "Türkçe altyazı.",
                          "version": 1, "apiVersion": 1, "status": 1, "language": "tr",
                          "tvTypes": ["TvSeries"], "repositoryUrl": rules.REPOSITORY,
                          "fileHash": "sha256-" + digest, "fileSize": len(data),
@@ -80,10 +80,22 @@ class RepoRulesTests(unittest.TestCase):
         self.write_json()
         with self.assertRaisesRegex(ValueError, "prefix"):
             rules.validate(self.main, self.builds)
-        self.entries[0]["name"] = "(Arcana Drama) Örnek"
+        self.entries[0]["name"] = "Arcana Drama Örnek"
         self.entries[0]["authors"] = ["Someone Else"]
         self.write_json()
         with self.assertRaisesRegex(ValueError, "authors"):
+            rules.validate(self.main, self.builds)
+
+    def test_domain_name_is_rejected(self):
+        self.entries[0]["name"] = "Arcana Drama example.com"
+        self.write_json()
+        with self.assertRaisesRegex(ValueError, "source domain"):
+            rules.validate(self.main, self.builds)
+
+    def test_technical_description_is_rejected(self):
+        self.entries[0]["description"] = "HLS CDN platform ayrıntıları"
+        self.write_json()
+        with self.assertRaisesRegex(ValueError, "language options"):
             rules.validate(self.main, self.builds)
 
     def test_module_manifest_version_drift_is_rejected(self):
