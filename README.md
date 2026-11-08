@@ -13,3 +13,5 @@ Geliştirici **ArcanaDrama**. [☕ Buy Me a Coffee — banadabi](https://www.buy
 [FullDrama kaynakları](https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaFullDrama) aynı ana daldadır; yeni kaynak için depo adresi değişmez.
 
 [DramaTR kaynakları](https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaDramaTR) aynı ana daldadır; kaynak altyazıları ve isteğe bağlı kendi kaynak hesabı desteklenir.
+
+[DramaDizilerim kaynakları](https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaDramaDizilerim): sürüm3, gerçek bölüm sırası, HLS/MP4 ve kaynak altyazıları.
