@@ -25,13 +25,15 @@ Bu dosya `banadabi/arcanadrama-addons` reposuna eklenen **bütün mevcut ve gele
 - Ortak derleyici/araç girdileri `release-inputs.json` kimliğine bağlanır. Gerçek kaynak değişikliği eski paket/hash altında gizlenmez.
 - Yeni paket, liste ve kaynak durumunu birlikte hazırlayıp doğrula. Eski kabul yeni hash’e otomatik aktarılmaz. `manifestVersion` her eklenti sürümünde artırılmaz.
 
-## 4. Kabul ve yayın kapısı
+## 4. Kabul ve yayın kapısı — owner 8 Kasım son talimatı
 
-- Değişen exact CS3/sürüm/hash, orijinal Cloudstream, bağımsız Play ve ArcanaDrama içindeki native Play üzerinde gerekli gerçek katalog/bölüm/video-zaman/uygulanabilir altyazı/sonraki bölüm kabulünü tamamlamadan çalışan public sürüm olarak yayımlanmaz. Bir motorun benzerliği diğerinin testi değildir.
-- Geçerli exact paket kabulünü sebepsiz tekrarlama. Kullanıcı kabulünü bağımsız yapılmış cihaz testi gibi yazma; hata veya eksik kabul varsa açık tut.
-- Exact bağımsız inceleme, taze ref/CAS, yedek ve sahipli yayın kilidi korunur. Force push, izsiz silme, belirsiz ref yazımını kör tekrar veya otomatik public yayın yapılmaz.
-- Otomasyon aday hazırlar; bu kapıları atlamaz. İlgili CI/rule doğrulaması başarısız olan aday kabul edilmez ve yayımlanmaz.
-- Yayın öncesi ve sonrasında `python3 tools/validate_repo.py --main <main-checkout> --builds <builds-checkout>` zorunludur. Yeni hazırlanmış sürümün geçici çıktısı için `--preview` kullanılır; bu public kabul değildir.
+Güncel kabul çifti **orijinal Cloudstream + ArcanaDrama içindeki Play** olur. Arcana mutlaka canlı `/app/latest` ile doğrulanan son sürüm olmalıdır. Bağımsız Play ve daha eski üç-host/iki-original-host/geçici yalnızCS hükümleri bu son talimatla aşılmıştır.
+
+- Aynı exact CS3 sürümü/hash iki güncel hedefte gerçek katalog/detay/bölüm/video-zaman, varsa kaynak altyazısı ve sonraki bölüm kapsamında kabul edilir. Owner kabulü kendi kimliğiyle ve sınırlarıyla kaydedilir; yapılmamış bağımsız test uydurulmaz.
+- Geçen değişmeyen exact paket gereksiz yeniden test edilmez veya derlenmez. Bağımsız Play’in bilinen erken-next/bölüm açma hatası eklentiye veya güncel Arcana’ya genellenmez.
+- Bağımsız exact CODE/OPS, taze ref/CAS, yedek/30GiB ve sahipli3600s yayın kilidi korunur. Force push, belirsiz ref yazımında kör tekrar veya otomatik public yayın yoktur.
+- Otomasyon yalnız aday hazırlar; kabul ve CI/rule kapılarını atlamaz.
+- Yayın öncesi ve sonrası `python3 tools/validate_repo.py --main MAIN --builds BUILDS` zorunludur. Yeni çıktı için `--preview` sadece hazırlık doğrulamasıdır.
 
 ## 5. Kaynak, hesap ve kapsam
 

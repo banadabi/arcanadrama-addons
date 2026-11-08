@@ -76,5 +76,20 @@
       "TvSeries"
     ],
     "apiVersion": 1
+  },
+  {
+    "internalName": "ArcanaDramaDizilerim",
+    "name": "(Arcana Drama) DramaDizilerim",
+    "description": "DramaDizilerim kataloğu, gerçek bölümler, kaynak HLS/MP4 ve yayımlanmış uyumluluk akışları. Kaynak: https://github.com/banadabi/arcanadrama-addons/tree/main/ArcanaDramaDizilerim",
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "language": "tr",
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "apiVersion": 1,
+    "status": 1,
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons"
   }
 ]
