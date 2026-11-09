@@ -54,6 +54,15 @@
       "source_digest": "c88e8384571aa063b5e0463be410eaf65b3eaf843c82f3dcd2e02199054605b4",
       "version": 4
     },
+    "ArcanaLiderShort": {
+      "artifact": {
+        "path": ".release-cache/ArcanaLiderShort/8/1cd5051b318a7b2954d9b8fd94cb7af64759d1e3c5ef2b70a5e98f8bf2b48161.cs3",
+        "sha256": "1cd5051b318a7b2954d9b8fd94cb7af64759d1e3c5ef2b70a5e98f8bf2b48161",
+        "size": 56019
+      },
+      "source_digest": "e8bafde2fcbb6708ea81b124ff5b1f0e6837e309d41ffa1baf5411bd10c2fb04",
+      "version": 8
+    },
     "ArcanaNarto": {
       "artifact": {
         "path": ".release-cache/ArcanaNarto/5/706c839082cde124f2b4531115cf4bcf92224dbd709cb4f9638bfed8bd75e101.cs3",

@@ -121,5 +121,20 @@
     "tvTypes": [
       "TvSeries"
     ]
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı.",
+    "internalName": "ArcanaLiderShort",
+    "language": "tr",
+    "name": "(Arcana Drama) LiderShort",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ]
   }
 ]

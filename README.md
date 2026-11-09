@@ -18,6 +18,7 @@ https://raw.githubusercontent.com/banadabi/arcanadrama-addons/main/repo.json
 | (Arcana Drama) Dizilerim | 3 | Türkçe altyazı. |
 | (Arcana Drama) Vakti | 1 | Türkçe dublaj ve Türkçe altyazı. |
 | (Arcana Drama) Cix | 20 | Türkçe dublaj ve Türkçe altyazı. |
+| (Arcana Drama) LiderShort | 8 | Türkçe altyazı. |
 
 ## Lisans
 
