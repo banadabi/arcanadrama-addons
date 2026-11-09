@@ -1,0 +1,10 @@
+{
+  "build.gradle.kts": "ece96c788a54a1e0740b2ca12d47b24f4b0c0f5c5e43272990dc4be0ed1f3d3f",
+  "gradle.properties": "dc4fdb9bf373bb56e8fed1a8ac241034d7a637155e2f154528978fd926cd16ad",
+  "gradle/wrapper/gradle-wrapper.jar": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+  "gradle/wrapper/gradle-wrapper.properties": "3cbe35d0020d8393c73f4cc2572838d1db338dd27885dd4d88c46b4d28f762e0",
+  "gradlew": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
+  "settings.gradle.kts": "a4c9aa570c97c337044972d2c2a666c4a1d16a245082c7a96fae1f7d9b92a45d",
+  "tools/build.py": "c2169eebe63b903f6c36a5d17c01b52f335df8e2abf5cf5eb885dde7d0828371",
+  "tools/release.py": "893edeedd9b417ba0f09367f623ac5d69159bf6d95c32c8a678b4732e688c302"
+}
