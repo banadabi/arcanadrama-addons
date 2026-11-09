@@ -92,6 +92,15 @@ class RepoRulesTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "source domain"):
             rules.validate(self.main, self.builds)
 
+    def test_empty_description_makes_no_unverified_language_claim(self):
+        self.entries[0]["description"] = ""
+        self.write_json()
+        self.assertTrue(rules.validate(self.main, self.builds)["valid"])
+        self.entries[0]["language"] = ""
+        self.write_json()
+        with self.assertRaisesRegex(ValueError, "language is required"):
+            rules.validate(self.main, self.builds)
+
     def test_technical_description_is_rejected(self):
         self.entries[0]["description"] = "HLS CDN platform ayrıntıları"
         self.write_json()

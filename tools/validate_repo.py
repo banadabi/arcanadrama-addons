@@ -109,11 +109,12 @@ def _metadata(entry):
         raise ValueError("Plugin status must be a known value 0..3")
     if re.search(r"https?://|www[.]|\b[a-z0-9-]+[.](?:com|net|org|xyz|io|tv|ai|online|site|download|co|tr)\b", entry["name"], re.I):
         raise ValueError("Plugin display name must not contain a source domain")
-    allowed_descriptions = {"Türkçe dublaj.", "Türkçe altyazı.", "Türkçe dublaj ve Türkçe altyazı.", "Türkçe altyazı ve çoklu altyazı.", "Türkçe dublaj, Türkçe altyazı ve çoklu altyazı."}
+    # An empty description makes no language claim; nonempty values stay language-only.
+    allowed_descriptions = {"", "Türkçe dublaj.", "Türkçe altyazı.", "Türkçe dublaj ve Türkçe altyazı.", "Türkçe altyazı ve çoklu altyazı.", "Türkçe dublaj, Türkçe altyazı ve çoklu altyazı."}
     if entry["description"] not in allowed_descriptions:
         raise ValueError("Plugin description must contain only verified language options")
-    if not _text(entry["description"]) or not _text(entry["language"]):
-        raise ValueError("Plugin description and language are required")
+    if not _text(entry["language"]):
+        raise ValueError("Plugin language is required")
     if not isinstance(entry["tvTypes"], list) or not entry["tvTypes"] or not all(map(_text, entry["tvTypes"])):
         raise ValueError("Plugin tvTypes must be a nonempty string array")
     if entry["repositoryUrl"] != REPOSITORY:

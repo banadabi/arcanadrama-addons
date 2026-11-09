@@ -1459,6 +1459,175 @@
           "size": 264
         }
       ]
+    },
+    {
+      "name": "ArcanaVerticalShorts",
+      "version": 5,
+      "artifact_sha256": "84a054f20a518b95cc014e684534c955e5235292d3bb1db054d05535d7991040",
+      "source_fingerprint": "3d5ffd9b0c795263fa0b19b7a1d5fe13bbffefcb781c891242c6742ad64aba34",
+      "change": "Original website guest context, real Flight metadata and explicit ordinal records with opaque IDs; passive clone of unchanged publisher request/response, original security guards, terminal-denial gates and scoped media/captions. No extra protected API requests or identity/header forgery.",
+      "files": [
+        {
+          "path": "ArcanaVerticalShorts/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "size": 35149
+        },
+        {
+          "path": "ArcanaVerticalShorts/NOTICE-WEBVIEW.md",
+          "sha256": "c1ea3437f1821365a2f4456143b60a3e9214149c3432439ccd2c5e69281906d5",
+          "size": 748
+        },
+        {
+          "path": "ArcanaVerticalShorts/README.md",
+          "sha256": "4acad14d88f6cc587fb78fc4c6651a0079f9e815fc1a329976a5f9ed5dd0aba4",
+          "size": 201
+        },
+        {
+          "path": "ArcanaVerticalShorts/build.gradle.kts",
+          "sha256": "74f299b886d2810d31b3e50d7e83647e3a5dbc656d54de711241659752d29c9b",
+          "size": 131
+        },
+        {
+          "path": "ArcanaVerticalShorts/compile-api/build.gradle.kts",
+          "sha256": "a224b875a64fa7c16ddc032858861ccf83a0db130cda0a1f62c28574a6fa27cd",
+          "size": 424
+        },
+        {
+          "path": "ArcanaVerticalShorts/compile-api/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaVerticalShorts/compile-api/src/main/java/com/lagradost/cloudstream3/plugins/Plugin.kt",
+          "sha256": "ebfe2c713b04d3c241769150da23a45f0a0dbc2ddaa8e3dc745796678f0b0e5e",
+          "size": 950
+        },
+        {
+          "path": "ArcanaVerticalShorts/gradle/wrapper/gradle-wrapper.jar",
+          "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+          "size": 45457
+        },
+        {
+          "path": "ArcanaVerticalShorts/gradle/wrapper/gradle-wrapper.properties",
+          "sha256": "3cbe35d0020d8393c73f4cc2572838d1db338dd27885dd4d88c46b4d28f762e0",
+          "size": 281
+        },
+        {
+          "path": "ArcanaVerticalShorts/gradle.properties",
+          "sha256": "eac3d66466c0e04ae93dc2cea1cbd5a82e86d5907b0ea6f4361693fe27a7e2d0",
+          "size": 98
+        },
+        {
+          "path": "ArcanaVerticalShorts/gradlew",
+          "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
+          "size": 8618
+        },
+        {
+          "path": "ArcanaVerticalShorts/libs/jsoup-1.23.2-patched.jar",
+          "sha256": "343ddc0a3c810f6610288d07b7b0c8e977342bd0def38cc77bd3281831c715d0",
+          "size": 532928
+        },
+        {
+          "path": "ArcanaVerticalShorts/libs/jsoup-LICENSE.txt",
+          "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1",
+          "size": 1102
+        },
+        {
+          "path": "ArcanaVerticalShorts/manifest.json",
+          "sha256": "1f355e826f9c49047215236d8de4fa19f703e969fd55f08e10037fb7b035425c",
+          "size": 143
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/build.gradle.kts",
+          "sha256": "8f20384bd9ccd5031812d90669f3d5aefa69d6b4eca9fe737aff786e6cdcb6d2",
+          "size": 969
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/ArcanaVerticalShortsPlugin.kt",
+          "sha256": "a06bdab524d92de9afd80274594bae0e6c7924891cb152168daefef288943cb8",
+          "size": 593
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/CaptionBuffer.kt",
+          "sha256": "eee88d3d209c2f761dbef6000a63670323028f3fe32f75036650e03a53c9cb2a",
+          "size": 2557
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/DocumentScripts.kt",
+          "sha256": "b68888d6fa1c85cf02de370e49d61d33e004cc44610f095be683106085fe0d92",
+          "size": 3222
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/FlightData.kt",
+          "sha256": "2b5bff904065ae2e8e524d81545e652b9ba8de5376f94ea35c9828fb22087f87",
+          "size": 4097
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/VerticalContract.kt",
+          "sha256": "2717bd7d39f5bab5c661396d70d97d2919fb9f055af4d3fc6daea776643c1ece",
+          "size": 19224
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/VerticalHold.kt",
+          "sha256": "8ce258c02a8590c43d7ca9859f586a3045690d07e92eb323166843e6b4f829c5",
+          "size": 503
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/VerticalHttp.kt",
+          "sha256": "3f00f71529c65fd221f84a1354b19090915c1f46cfc0ed3237e2ae3199ea46a4",
+          "size": 7328
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/VerticalMedia.kt",
+          "sha256": "c833906a236a31de7c18fa6d7b0c763ac358ee965abfa693aea3e49089253af5",
+          "size": 8256
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/VerticalObserver.kt",
+          "sha256": "c0487a6f69657394210d8cf8bd3a1df4249b1597220747fe3589a0443bec7193",
+          "size": 6348
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/VerticalProvider.kt",
+          "sha256": "8489b1ae0b0cca0338b14916d4dca2c702a6383613c70307269500b7ff101532",
+          "size": 6355
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/VerticalSession.kt",
+          "sha256": "bb841b472c0678f63e40de10ca338f2bbece3e6d6659d35a0ea1e14f64b07ed5",
+          "size": 31028
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/VerticalSettings.kt",
+          "sha256": "6316cb5afba71a58af40c36e83d44f834d6807369b698af3233b51d2466db469",
+          "size": 1842
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/main/kotlin/dev/arcana/verticalshorts/VerticalUrlPolicy.kt",
+          "sha256": "cfc31b3a806d31d0583b55e1e785eb9013fdb1782b4d06eb6247010ffd4e1d41",
+          "size": 2964
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/test/kotlin/dev/arcana/verticalshorts/VerticalContractTest.kt",
+          "sha256": "b7200fa566ac38f1a305e504e895efb260c85f674a24e355ae92659031ce0fbf",
+          "size": 10539
+        },
+        {
+          "path": "ArcanaVerticalShorts/provider/src/test/resources/observer-fixture.cjs",
+          "sha256": "48d34ad0e2fa7ef3792044e8e882a88582b4c09a32a8516e61d27b481f683a36",
+          "size": 3294
+        },
+        {
+          "path": "ArcanaVerticalShorts/release-inputs.json",
+          "sha256": "bf4fafb0ad6968d69b502883f214bab80c206c03955a8bc1d60eaa95977a6372",
+          "size": 757
+        },
+        {
+          "path": "ArcanaVerticalShorts/settings.gradle.kts",
+          "sha256": "1400e9279cc8b12a57db02bb410e5c4e80306ed870f2bd076356575f00e2c7e9",
+          "size": 267
+        }
+      ]
     }
   ]
 }

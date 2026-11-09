@@ -166,5 +166,20 @@
     "tvTypes": [
       "TvSeries"
     ]
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "",
+    "internalName": "ArcanaVerticalShorts",
+    "language": "tr",
+    "name": "(Arcana Drama) VerticalShorts",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ]
   }
 ]

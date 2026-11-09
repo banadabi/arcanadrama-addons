@@ -1,1 +1,233 @@
-[{"apiVersion":1,"authors":["ArcanaDrama"],"description":"Türkçe altyazı.","fileHash":"sha256-7fe7540579262bf8468484ef54f12ef3ec44919d8510cc5158c4a6fca630dbf0","fileSize":49928,"internalName":"ArcanaShortizle","language":"tr","name":"(Arcana Drama) Shortİzle","repositoryUrl":"https://github.com/banadabi/arcanadrama-addons","status":1,"tvTypes":["TvSeries"],"url":"https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaShortizle.cs3?v=7fe7540579262bf8468484ef54f12ef3ec44919d8510cc5158c4a6fca630dbf0","version":4},{"apiVersion":1,"authors":["ArcanaDrama"],"description":"Türkçe altyazı ve çoklu altyazı.","fileHash":"sha256-706c839082cde124f2b4531115cf4bcf92224dbd709cb4f9638bfed8bd75e101","fileSize":56764,"internalName":"ArcanaNarto","language":"tr","name":"(Arcana Drama) Narto","repositoryUrl":"https://github.com/banadabi/arcanadrama-addons","status":1,"tvTypes":["TvSeries","Anime","Movie"],"url":"https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaNarto.cs3?v=706c839082cde124f2b4531115cf4bcf92224dbd709cb4f9638bfed8bd75e101","version":5},{"apiVersion":1,"authors":["ArcanaDrama"],"description":"Türkçe dublaj ve Türkçe altyazı.","fileHash":"sha256-7ed67e7346232fe3bcc477637e3892eededbf320188976091b80e7bc043ac017","fileSize":30951,"internalName":"ArcanaIzleGec","language":"tr","name":"(Arcana Drama) İzleGeç","repositoryUrl":"https://github.com/banadabi/arcanadrama-addons","status":1,"tvTypes":["TvSeries"],"url":"https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaIzleGec.cs3?v=7ed67e7346232fe3bcc477637e3892eededbf320188976091b80e7bc043ac017","version":4},{"apiVersion":1,"authors":["ArcanaDrama"],"description":"Türkçe dublaj ve Türkçe altyazı.","fileHash":"sha256-bdd5a252e76c17260ed5b41c72437d0ebb4d2166d27ee31881b57847ed82201f","fileSize":57282,"iconUrl":"https://fulldrama.xyz/assets/uploads/favicon.png","internalName":"ArcanaFullDrama","language":"tr","name":"(Arcana Drama) FullDrama","repositoryUrl":"https://github.com/banadabi/arcanadrama-addons","status":1,"tvTypes":["TvSeries"],"url":"https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaFullDrama.cs3?v=bdd5a252e76c17260ed5b41c72437d0ebb4d2166d27ee31881b57847ed82201f","version":5},{"apiVersion":1,"authors":["ArcanaDrama"],"description":"Türkçe dublaj ve Türkçe altyazı.","fileHash":"sha256-42bc02a1abe37b104308cacd59e976bfd69e7d73eb27373aec73ecf38a459e0e","fileSize":34354,"internalName":"ArcanaDramaTR","language":"tr","name":"(Arcana Drama) TR","repositoryUrl":"https://github.com/banadabi/arcanadrama-addons","status":1,"tvTypes":["TvSeries"],"url":"https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaDramaTR.cs3?v=42bc02a1abe37b104308cacd59e976bfd69e7d73eb27373aec73ecf38a459e0e","version":1},{"apiVersion":1,"authors":["ArcanaDrama"],"description":"Türkçe altyazı.","fileHash":"sha256-c3f908b993c42a032c738a136d841c50e19d4c676782425b731b5847459d44b6","fileSize":53313,"internalName":"ArcanaDramaDizilerim","language":"tr","name":"(Arcana Drama) Dizilerim","repositoryUrl":"https://github.com/banadabi/arcanadrama-addons","status":1,"tvTypes":["TvSeries"],"url":"https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaDramaDizilerim.cs3?v=c3f908b993c42a032c738a136d841c50e19d4c676782425b731b5847459d44b6","version":3},{"apiVersion":1,"authors":["ArcanaDrama"],"description":"Türkçe dublaj ve Türkçe altyazı.","fileHash":"sha256-8ef656f93f3e58b662d3a585b346d95d36112b910651f176faeb48657f534fbd","fileSize":46849,"internalName":"ArcanaDramaVakti","language":"tr","name":"(Arcana Drama) Vakti","repositoryUrl":"https://github.com/banadabi/arcanadrama-addons","status":1,"tvTypes":["TvSeries"],"url":"https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaDramaVakti.cs3?v=8ef656f93f3e58b662d3a585b346d95d36112b910651f176faeb48657f534fbd","version":1},{"apiVersion":1,"authors":["ArcanaDrama"],"description":"Türkçe dublaj ve Türkçe altyazı.","fileHash":"sha256-ec6051b06299e3909a883da27659ecf6c66419ac6b6a99a720600cc62cc9b7af","fileSize":75393,"internalName":"ArcanaDramacix","language":"tr","name":"(Arcana Drama) Cix","repositoryUrl":"https://github.com/banadabi/arcanadrama-addons","status":1,"tvTypes":["TvSeries"],"url":"https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaDramacix.cs3?v=ec6051b06299e3909a883da27659ecf6c66419ac6b6a99a720600cc62cc9b7af","version":20},{"apiVersion":1,"authors":["ArcanaDrama"],"description":"Türkçe altyazı.","fileHash":"sha256-1cd5051b318a7b2954d9b8fd94cb7af64759d1e3c5ef2b70a5e98f8bf2b48161","fileSize":56019,"internalName":"ArcanaLiderShort","language":"tr","name":"(Arcana Drama) LiderShort","repositoryUrl":"https://github.com/banadabi/arcanadrama-addons","status":1,"tvTypes":["TvSeries"],"url":"https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaLiderShort.cs3?v=1cd5051b318a7b2954d9b8fd94cb7af64759d1e3c5ef2b70a5e98f8bf2b48161","version":8},{"apiVersion":1,"authors":["ArcanaDrama"],"description":"Türkçe altyazı.","fileHash":"sha256-6bc08a482bc2ba07d22132bc9a803fbbea551f6947472df96241da52ba2696ce","fileSize":72093,"internalName":"ArcanaDramaDunyam","language":"tr","name":"(Arcana Drama) DramaDünyam","repositoryUrl":"https://github.com/banadabi/arcanadrama-addons","status":1,"tvTypes":["TvSeries"],"url":"https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaDramaDunyam.cs3?v=6bc08a482bc2ba07d22132bc9a803fbbea551f6947472df96241da52ba2696ce","version":3},{"apiVersion":1,"authors":["ArcanaDrama"],"description":"Türkçe altyazı.","fileHash":"sha256-a5f89d7b7c8d749e6eef94f4d443a308196d76d16e5704f434011b11b74142f5","fileSize":69491,"internalName":"ArcanaDirectDrama","language":"tr","name":"(Arcana Drama) DirectDrama","repositoryUrl":"https://github.com/banadabi/arcanadrama-addons","status":1,"tvTypes":["TvSeries"],"url":"https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaDirectDrama.cs3?v=a5f89d7b7c8d749e6eef94f4d443a308196d76d16e5704f434011b11b74142f5","version":1}]
+[
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı.",
+    "fileHash": "sha256-7fe7540579262bf8468484ef54f12ef3ec44919d8510cc5158c4a6fca630dbf0",
+    "fileSize": 49928,
+    "internalName": "ArcanaShortizle",
+    "language": "tr",
+    "name": "(Arcana Drama) Shortİzle",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaShortizle.cs3?v=7fe7540579262bf8468484ef54f12ef3ec44919d8510cc5158c4a6fca630dbf0",
+    "version": 4
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı ve çoklu altyazı.",
+    "fileHash": "sha256-706c839082cde124f2b4531115cf4bcf92224dbd709cb4f9638bfed8bd75e101",
+    "fileSize": 56764,
+    "internalName": "ArcanaNarto",
+    "language": "tr",
+    "name": "(Arcana Drama) Narto",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries",
+      "Anime",
+      "Movie"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaNarto.cs3?v=706c839082cde124f2b4531115cf4bcf92224dbd709cb4f9638bfed8bd75e101",
+    "version": 5
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
+    "fileHash": "sha256-7ed67e7346232fe3bcc477637e3892eededbf320188976091b80e7bc043ac017",
+    "fileSize": 30951,
+    "internalName": "ArcanaIzleGec",
+    "language": "tr",
+    "name": "(Arcana Drama) İzleGeç",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaIzleGec.cs3?v=7ed67e7346232fe3bcc477637e3892eededbf320188976091b80e7bc043ac017",
+    "version": 4
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
+    "fileHash": "sha256-bdd5a252e76c17260ed5b41c72437d0ebb4d2166d27ee31881b57847ed82201f",
+    "fileSize": 57282,
+    "iconUrl": "https://fulldrama.xyz/assets/uploads/favicon.png",
+    "internalName": "ArcanaFullDrama",
+    "language": "tr",
+    "name": "(Arcana Drama) FullDrama",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaFullDrama.cs3?v=bdd5a252e76c17260ed5b41c72437d0ebb4d2166d27ee31881b57847ed82201f",
+    "version": 5
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
+    "fileHash": "sha256-42bc02a1abe37b104308cacd59e976bfd69e7d73eb27373aec73ecf38a459e0e",
+    "fileSize": 34354,
+    "internalName": "ArcanaDramaTR",
+    "language": "tr",
+    "name": "(Arcana Drama) TR",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaDramaTR.cs3?v=42bc02a1abe37b104308cacd59e976bfd69e7d73eb27373aec73ecf38a459e0e",
+    "version": 1
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı.",
+    "fileHash": "sha256-c3f908b993c42a032c738a136d841c50e19d4c676782425b731b5847459d44b6",
+    "fileSize": 53313,
+    "internalName": "ArcanaDramaDizilerim",
+    "language": "tr",
+    "name": "(Arcana Drama) Dizilerim",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaDramaDizilerim.cs3?v=c3f908b993c42a032c738a136d841c50e19d4c676782425b731b5847459d44b6",
+    "version": 3
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
+    "fileHash": "sha256-8ef656f93f3e58b662d3a585b346d95d36112b910651f176faeb48657f534fbd",
+    "fileSize": 46849,
+    "internalName": "ArcanaDramaVakti",
+    "language": "tr",
+    "name": "(Arcana Drama) Vakti",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaDramaVakti.cs3?v=8ef656f93f3e58b662d3a585b346d95d36112b910651f176faeb48657f534fbd",
+    "version": 1
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
+    "fileHash": "sha256-ec6051b06299e3909a883da27659ecf6c66419ac6b6a99a720600cc62cc9b7af",
+    "fileSize": 75393,
+    "internalName": "ArcanaDramacix",
+    "language": "tr",
+    "name": "(Arcana Drama) Cix",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaDramacix.cs3?v=ec6051b06299e3909a883da27659ecf6c66419ac6b6a99a720600cc62cc9b7af",
+    "version": 20
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı.",
+    "fileHash": "sha256-1cd5051b318a7b2954d9b8fd94cb7af64759d1e3c5ef2b70a5e98f8bf2b48161",
+    "fileSize": 56019,
+    "internalName": "ArcanaLiderShort",
+    "language": "tr",
+    "name": "(Arcana Drama) LiderShort",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaLiderShort.cs3?v=1cd5051b318a7b2954d9b8fd94cb7af64759d1e3c5ef2b70a5e98f8bf2b48161",
+    "version": 8
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı.",
+    "fileHash": "sha256-6bc08a482bc2ba07d22132bc9a803fbbea551f6947472df96241da52ba2696ce",
+    "fileSize": 72093,
+    "internalName": "ArcanaDramaDunyam",
+    "language": "tr",
+    "name": "(Arcana Drama) DramaDünyam",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaDramaDunyam.cs3?v=6bc08a482bc2ba07d22132bc9a803fbbea551f6947472df96241da52ba2696ce",
+    "version": 3
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı.",
+    "fileHash": "sha256-a5f89d7b7c8d749e6eef94f4d443a308196d76d16e5704f434011b11b74142f5",
+    "fileSize": 69491,
+    "internalName": "ArcanaDirectDrama",
+    "language": "tr",
+    "name": "(Arcana Drama) DirectDrama",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaDirectDrama.cs3?v=a5f89d7b7c8d749e6eef94f4d443a308196d76d16e5704f434011b11b74142f5",
+    "version": 1
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "",
+    "fileHash": "sha256-84a054f20a518b95cc014e684534c955e5235292d3bb1db054d05535d7991040",
+    "fileSize": 83288,
+    "internalName": "ArcanaVerticalShorts",
+    "language": "tr",
+    "name": "(Arcana Drama) VerticalShorts",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaVerticalShorts.cs3?v=84a054f20a518b95cc014e684534c955e5235292d3bb1db054d05535d7991040",
+    "version": 5
+  }
+]
