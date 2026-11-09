@@ -20,6 +20,7 @@ https://raw.githubusercontent.com/banadabi/arcanadrama-addons/main/repo.json
 | (Arcana Drama) Cix | 20 | Türkçe dublaj ve Türkçe altyazı. |
 | (Arcana Drama) LiderShort | 8 | Türkçe altyazı. |
 | (Arcana Drama) DramaDünyam | 3 | Türkçe altyazı. |
+| (Arcana Drama) DirectDrama | 1 | Türkçe altyazı. |
 
 ## Lisans
 

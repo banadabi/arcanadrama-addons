@@ -1,0 +1,6 @@
+{
+  "name": "ArcanaDirectDrama",
+  "pluginClassName": "dev.arcana.directdrama.ArcanaDirectDramaPlugin",
+  "requiresResources": false,
+  "version": 1
+}

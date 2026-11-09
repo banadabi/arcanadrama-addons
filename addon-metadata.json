@@ -151,5 +151,20 @@
     "tvTypes": [
       "TvSeries"
     ]
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı.",
+    "internalName": "ArcanaDirectDrama",
+    "language": "tr",
+    "name": "(Arcana Drama) DirectDrama",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ]
   }
 ]
