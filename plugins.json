@@ -248,5 +248,24 @@
     ],
     "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaAnyShort.cs3?v=3e16234fefbe25ba6d21ad0ec355140dce1b007e9e5d19e5c03dbd7048435471",
     "version": 3
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı.",
+    "fileHash": "sha256-8dafad7854d98be2dbc1f3b378f6733b00b7f694b3607fb594d0b3c2a85d75be",
+    "fileSize": 58226,
+    "internalName": "ArcanaMiniDiziIzle",
+    "language": "tr",
+    "name": "(Arcana Drama) MiniDiziİzle",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaMiniDiziIzle.cs3?v=8dafad7854d98be2dbc1f3b378f6733b00b7f694b3607fb594d0b3c2a85d75be",
+    "version": 1
   }
 ]

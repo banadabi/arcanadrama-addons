@@ -1,0 +1,6 @@
+{
+  "name": "ArcanaMiniDiziIzle",
+  "pluginClassName": "dev.arcana.minidiziizle.ArcanaMiniDiziIzlePlugin",
+  "requiresResources": false,
+  "version": 1
+}

@@ -196,5 +196,20 @@
     "tvTypes": [
       "TvSeries"
     ]
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı.",
+    "internalName": "ArcanaMiniDiziIzle",
+    "language": "tr",
+    "name": "(Arcana Drama) MiniDiziİzle",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ]
   }
 ]

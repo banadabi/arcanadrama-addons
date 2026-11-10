@@ -1767,6 +1767,165 @@
           "size": 261
         }
       ]
+    },
+    {
+      "name": "ArcanaMiniDiziIzle",
+      "version": 1,
+      "artifact_sha256": "8dafad7854d98be2dbc1f3b378f6733b00b7f694b3607fb594d0b3c2a85d75be",
+      "source_fingerprint": "ffb558b6d5d3b589c7a4a430638faf28ccfd108d4a0b05dfa120d4b545f777c0",
+      "change": "Original native MainAPI for current WordPress HTML and normal pool/playback guest contract. Requested canonical identity, real grouped chapter anchors and explicit source editions; shared homepage preview and true archive continuation, source search. Scoped cookie jar, normal guest storage session/ticket authorization, guarded HTTPS HLS/media transport with key/range byte roles. No browser account import, worker or database changes. Runtime acceptance is recorded separately.",
+      "files": [
+        {
+          "path": "ArcanaMiniDiziIzle/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "size": 35149
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/README.md",
+          "sha256": "d6f4e72c8c0d96efb813ccb3eb898200d25f7474dc229de8a2c5cbab47f6c038",
+          "size": 32
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/build.gradle.kts",
+          "sha256": "74f299b886d2810d31b3e50d7e83647e3a5dbc656d54de711241659752d29c9b",
+          "size": 131
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/compile-api/build.gradle.kts",
+          "sha256": "a224b875a64fa7c16ddc032858861ccf83a0db130cda0a1f62c28574a6fa27cd",
+          "size": 424
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/compile-api/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/compile-api/src/main/java/com/lagradost/cloudstream3/plugins/Plugin.kt",
+          "sha256": "ebfe2c713b04d3c241769150da23a45f0a0dbc2ddaa8e3dc745796678f0b0e5e",
+          "size": 950
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/gradle.properties",
+          "sha256": "eac3d66466c0e04ae93dc2cea1cbd5a82e86d5907b0ea6f4361693fe27a7e2d0",
+          "size": 98
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/gradle/wrapper/gradle-wrapper.jar",
+          "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+          "size": 45457
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/gradle/wrapper/gradle-wrapper.properties",
+          "sha256": "3cbe35d0020d8393c73f4cc2572838d1db338dd27885dd4d88c46b4d28f762e0",
+          "size": 281
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/gradlew",
+          "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
+          "size": 8618
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/libs/jsoup-1.23.2-patched.jar",
+          "sha256": "343ddc0a3c810f6610288d07b7b0c8e977342bd0def38cc77bd3281831c715d0",
+          "size": 532928
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/libs/jsoup-LICENSE.txt",
+          "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1",
+          "size": 1102
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/manifest.json",
+          "sha256": "34805b335187dd48e2084632ff46ba845bea827c77b4c7fa72c2dcb80e0c70d9",
+          "size": 154
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/build.gradle.kts",
+          "sha256": "0d51b97dc70e95c12b5b032d0c60f968fa7504659bd3b8e252ddae315d4cac72",
+          "size": 906
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/main/kotlin/dev/arcana/minidiziizle/ArcanaMiniDiziIzlePlugin.kt",
+          "sha256": "657547ace9038ab5b2ec1e856edc001d1aa8f52162bd397a6ab58dc1cf189293",
+          "size": 563
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/main/kotlin/dev/arcana/minidiziizle/MiniContract.kt",
+          "sha256": "cec6aef72740eb8f96664b07d996defe0acf16d358356e26c54dfa27add33181",
+          "size": 10715
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/main/kotlin/dev/arcana/minidiziizle/MiniHttp.kt",
+          "sha256": "57874da4e62def321a8202b2d34c7c409a33125e54f3b22188f0192d8a062457",
+          "size": 7536
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/main/kotlin/dev/arcana/minidiziizle/MiniMedia.kt",
+          "sha256": "ce49c8384215c1ca4d1c379f0a12edf96a8f12560629ccdaad11b82cb140d7a6",
+          "size": 11787
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/main/kotlin/dev/arcana/minidiziizle/MiniPolicy.kt",
+          "sha256": "a8bb1f61809c79c3bdd38df26f5192e937af3afb8e921e18dbb919eb44d36dc8",
+          "size": 7770
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/main/kotlin/dev/arcana/minidiziizle/MiniProvider.kt",
+          "sha256": "d93e28e90e381b5a804d34b3d006a7b11602c04e224b6fc25c62d2af10ef65de",
+          "size": 12162
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/main/kotlin/dev/arcana/minidiziizle/MiniSettings.kt",
+          "sha256": "a1e4e88219621dc87f08ccd34a076c550b8c246b421d3af5b51fce5c18975417",
+          "size": 1538
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/test/kotlin/dev/arcana/minidiziizle/MiniContractTest.kt",
+          "sha256": "2dedb21049ac62131dc39d4982d66d53863f5e1f3eeb1d4c686f83b7e64aa110",
+          "size": 6650
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/test/resources/mini-detail-source-r1.html",
+          "sha256": "e7d1179c9f1239dd2b018b30e786d031899e13d0e3fe31e6296e3fe71ed448db",
+          "size": 10967
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/test/resources/mini-episode-source-r1.html",
+          "sha256": "5379b478661a1f8d7c8645d93be75c304f1351fc584ffaa845929f280d069e87",
+          "size": 10038
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/test/resources/mini-home-source-r1.html",
+          "sha256": "fad5531537b89d9f8f1ef610f042f8102fd9a78ffd0cff8b3d4ec5e85bc5126e",
+          "size": 35128
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/test/resources/mini-sub-list-source-r1.html",
+          "sha256": "cad25261454d93e4e3a679a5526b15063ac4c4b09646037bfd88c0be2be7f9e3",
+          "size": 60010
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/provider/src/test/resources/search.json",
+          "sha256": "39108255e56dca92aac8b117b7ded422a5fd82fdd00ca65f284a7ccb263a05b8",
+          "size": 1944
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/release-inputs.json",
+          "sha256": "bf4fafb0ad6968d69b502883f214bab80c206c03955a8bc1d60eaa95977a6372",
+          "size": 757
+        },
+        {
+          "path": "ArcanaMiniDiziIzle/settings.gradle.kts",
+          "sha256": "0de7687e4f4bf035b628f013f5e2b6f7898d560d7c8aaa029f2d32ec934756d7",
+          "size": 265
+        }
+      ]
     }
   ]
 }
