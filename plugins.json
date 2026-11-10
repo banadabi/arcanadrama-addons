@@ -229,5 +229,24 @@
     ],
     "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaVerticalShorts.cs3?v=84a054f20a518b95cc014e684534c955e5235292d3bb1db054d05535d7991040",
     "version": 5
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı.",
+    "fileHash": "sha256-3e16234fefbe25ba6d21ad0ec355140dce1b007e9e5d19e5c03dbd7048435471",
+    "fileSize": 54469,
+    "internalName": "ArcanaAnyShort",
+    "language": "tr",
+    "name": "(Arcana Drama) AnyShort",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "url": "https://raw.githubusercontent.com/banadabi/arcanadrama-addons/builds/ArcanaAnyShort.cs3?v=3e16234fefbe25ba6d21ad0ec355140dce1b007e9e5d19e5c03dbd7048435471",
+    "version": 3
   }
 ]
