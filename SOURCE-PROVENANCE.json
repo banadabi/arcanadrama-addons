@@ -1926,6 +1926,220 @@
           "size": 265
         }
       ]
+    },
+    {
+      "name": "ArcanaLiderDrama",
+      "version": 19,
+      "artifact_sha256": "2f8d961cb97749dd8a9b0a8fc63739edaa38236a43343aa23b21088240747cbb",
+      "source_fingerprint": "fba1ade9c6e10a67072799d6b00795107cac26e4e09c35b11e2d28bf769512ef",
+      "change": "Episode-bound automatic first-party caption preparation before video callbacks. Corresponding original native sources; runtime evidence and known limits recorded separately.",
+      "files": [
+        {
+          "path": "ArcanaLiderDrama/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "size": 35149
+        },
+        {
+          "path": "ArcanaLiderDrama/README.md",
+          "sha256": "1193fcf05d91c3b40227809886dc2e6eba0a9aaae890597829c6944c9f8abef5",
+          "size": 29
+        },
+        {
+          "path": "ArcanaLiderDrama/build.gradle.kts",
+          "sha256": "74f299b886d2810d31b3e50d7e83647e3a5dbc656d54de711241659752d29c9b",
+          "size": 131
+        },
+        {
+          "path": "ArcanaLiderDrama/compile-api/build.gradle.kts",
+          "sha256": "a224b875a64fa7c16ddc032858861ccf83a0db130cda0a1f62c28574a6fa27cd",
+          "size": 424
+        },
+        {
+          "path": "ArcanaLiderDrama/compile-api/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaLiderDrama/compile-api/src/main/java/com/lagradost/cloudstream3/plugins/Plugin.kt",
+          "sha256": "ebfe2c713b04d3c241769150da23a45f0a0dbc2ddaa8e3dc745796678f0b0e5e",
+          "size": 950
+        },
+        {
+          "path": "ArcanaLiderDrama/gradle.properties",
+          "sha256": "eac3d66466c0e04ae93dc2cea1cbd5a82e86d5907b0ea6f4361693fe27a7e2d0",
+          "size": 98
+        },
+        {
+          "path": "ArcanaLiderDrama/gradle/wrapper/gradle-wrapper.jar",
+          "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+          "size": 45457
+        },
+        {
+          "path": "ArcanaLiderDrama/gradle/wrapper/gradle-wrapper.properties",
+          "sha256": "3cbe35d0020d8393c73f4cc2572838d1db338dd27885dd4d88c46b4d28f762e0",
+          "size": 281
+        },
+        {
+          "path": "ArcanaLiderDrama/gradlew",
+          "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
+          "size": 8618
+        },
+        {
+          "path": "ArcanaLiderDrama/libs/jsoup-1.23.2-patched.jar",
+          "sha256": "343ddc0a3c810f6610288d07b7b0c8e977342bd0def38cc77bd3281831c715d0",
+          "size": 532928
+        },
+        {
+          "path": "ArcanaLiderDrama/libs/jsoup-LICENSE.txt",
+          "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1",
+          "size": 1102
+        },
+        {
+          "path": "ArcanaLiderDrama/manifest.json",
+          "sha256": "7a28fabcb16e949897b203ce2d42518af64a4cfaf72e2efd8ade37239a35e9f4",
+          "size": 132
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/build.gradle.kts",
+          "sha256": "156b98973a33453c3a1f40bd65b3434a27d0ce802427523658f6af2d75aad7d6",
+          "size": 904
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/ArcanaLiderDramaPlugin.kt",
+          "sha256": "caea21dc5afc0c66818c481c58c8fef7b373fd060c4f8acf4c4d124790da5b40",
+          "size": 523
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderAutomaticCaptionPolicy.kt",
+          "sha256": "29fde2c7c0ea4f34e63ce74bb6f21532e5b7c4c45d0c784131b3db86ad2d93ca",
+          "size": 4103
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderAutomaticCaptions.kt",
+          "sha256": "1f61b304ee44eed7adb981ca88fada0914d27519360973dc1d4adb4ab80ac70b",
+          "size": 12703
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderCaptionPolicy.kt",
+          "sha256": "c936e0719f7897d57a30432102930935cef7daf19604346a99044fe5f5f59843",
+          "size": 6594
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderCaptionProbe.kt",
+          "sha256": "ddbfbf42d44e6f11f2970b60465ab835e80572af8439db008cb6e99fc7e60cfc",
+          "size": 1953
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderCaptionSession.kt",
+          "sha256": "9be39fbf2ddfb945f70cf4b5d75ea52dc45b5b405983594c3ca56aa5ee2e1750",
+          "size": 27114
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderCataloguePlan.kt",
+          "sha256": "a7a03e71f11a79f7df871c065244402180b3e55e4f2e94b62995d0879f46bbb5",
+          "size": 616
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderContract.kt",
+          "sha256": "4ad17bfcadac2beb1aa26b4041a437c13db0d0aa4de55415cf336075fc256c8f",
+          "size": 7824
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderFailureContext.kt",
+          "sha256": "8ea5caf58807a3564acb839e3d7355ca1fc0ad546b5f93d79a195227c6655094",
+          "size": 1388
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderHttp.kt",
+          "sha256": "05066728ae9bb4847f2d7033bade14c98b90aba65eca6e9e45c20edb659d7617",
+          "size": 11172
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderMedia.kt",
+          "sha256": "e1b119f5d4fc637b29dc05f8f9406d567601fdd944e28d01d38d79ae81fce17f",
+          "size": 12367
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderPolicy.kt",
+          "sha256": "2c8422ec466caa8f6162ce8c0ae66418e45f7e43e943352ec57d44237d637713",
+          "size": 8760
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderProvider.kt",
+          "sha256": "fd292a3350c4e752d5f623bd8d5a691e6a6cec4d7240e7ccde562ea1b954de3e",
+          "size": 9315
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/main/kotlin/dev/arcana/liderdrama/LiderSettings.kt",
+          "sha256": "deee749cfa529107b1a339874e4c21c29b64284f8c8fdc2b0f30a466f6692b6d",
+          "size": 3048
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/test/kotlin/dev/arcana/liderdrama/LiderAutomaticCaptionTest.kt",
+          "sha256": "aa15686cc97865827a4f33134d82b6b56a595faf62feeee9cc4a377438240834",
+          "size": 4573
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/test/kotlin/dev/arcana/liderdrama/LiderCaptionSessionTest.kt",
+          "sha256": "afe7b215ce59828297c6ad4f4fea8a800fb94b8a811a5bba7247b0346d21f28c",
+          "size": 8559
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/test/kotlin/dev/arcana/liderdrama/LiderCataloguePlanTest.kt",
+          "sha256": "6ef25ef56d835c0489d71373fcd129793832672ca3ff2b322126c530cb7a1913",
+          "size": 1973
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/test/kotlin/dev/arcana/liderdrama/LiderContractTest.kt",
+          "sha256": "62befff8b37436f32923cae00415b2a9d11bb277e0206062fef2e5874069487e",
+          "size": 6374
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/test/kotlin/dev/arcana/liderdrama/LiderFailureContextTest.kt",
+          "sha256": "caff04d0e3edb8ea6b37dfa65063b57a15729e69b2271902b7188a90841df3c3",
+          "size": 1123
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/test/resources/catalogue.json",
+          "sha256": "5b70ff3de4654850994976c84afd4b25e66f7f191b3e25050daa793d8e2c82a2",
+          "size": 27743
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/test/resources/chosen-luna-metadata.json",
+          "sha256": "1560b4cb9e71f8b297366a7597c689ce46775445f7a79293708bc2110206ec54",
+          "size": 45010
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/test/resources/detail.json",
+          "sha256": "a05ea93fc040722b6f05e2d0ae668ad5a41e9a7cb32cc994c5b3445c1f6776c4",
+          "size": 10529
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/test/resources/home.json",
+          "sha256": "0e8f9ca90f91076ef9f248c5b8eb698296da6a303798543c5e711d65ee386daf",
+          "size": 71007
+        },
+        {
+          "path": "ArcanaLiderDrama/provider/src/test/resources/video.json",
+          "sha256": "2a1a5da0f82738a4b2b6bdbb093a85f15d10fdfd601c0166c562e0cfa85755b0",
+          "size": 710
+        },
+        {
+          "path": "ArcanaLiderDrama/release-inputs.json",
+          "sha256": "bf4fafb0ad6968d69b502883f214bab80c206c03955a8bc1d60eaa95977a6372",
+          "size": 757
+        },
+        {
+          "path": "ArcanaLiderDrama/settings.gradle.kts",
+          "sha256": "a8feee11cc48351b7092dc354a09caf8a4ce9c44b21f992413efa2ad1e0d1f4e",
+          "size": 263
+        }
+      ]
     }
   ]
 }

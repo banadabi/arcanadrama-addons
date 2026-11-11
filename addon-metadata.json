@@ -1,96 +1,96 @@
 [
   {
-    "status": 1,
-    "name": "(Arcana Drama) Shortİzle",
-    "internalName": "ArcanaShortizle",
+    "apiVersion": 1,
     "authors": [
       "ArcanaDrama"
     ],
     "description": "Türkçe altyazı.",
-    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "internalName": "ArcanaShortizle",
     "language": "tr",
+    "name": "(Arcana Drama) Shortİzle",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
     "tvTypes": [
       "TvSeries"
-    ],
-    "apiVersion": 1
+    ]
   },
   {
-    "status": 1,
-    "name": "(Arcana Drama) Narto",
-    "internalName": "ArcanaNarto",
+    "apiVersion": 1,
     "authors": [
       "ArcanaDrama"
     ],
     "description": "Türkçe altyazı ve çoklu altyazı.",
-    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "internalName": "ArcanaNarto",
     "language": "tr",
+    "name": "(Arcana Drama) Narto",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
     "tvTypes": [
       "TvSeries",
       "Anime",
       "Movie"
-    ],
-    "apiVersion": 1
+    ]
   },
   {
-    "status": 1,
-    "name": "(Arcana Drama) İzleGeç",
-    "internalName": "ArcanaIzleGec",
-    "authors": [
-      "ArcanaDrama"
-    ],
-    "description": "Türkçe dublaj ve Türkçe altyazı.",
-    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
-    "language": "tr",
-    "tvTypes": [
-      "TvSeries"
-    ],
-    "apiVersion": 1
-  },
-  {
-    "status": 1,
-    "name": "(Arcana Drama) FullDrama",
-    "internalName": "ArcanaFullDrama",
-    "authors": [
-      "ArcanaDrama"
-    ],
-    "description": "Türkçe dublaj ve Türkçe altyazı.",
-    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
-    "language": "tr",
-    "tvTypes": [
-      "TvSeries"
-    ],
-    "iconUrl": "https://fulldrama.xyz/assets/uploads/favicon.png",
-    "apiVersion": 1
-  },
-  {
-    "status": 1,
-    "name": "(Arcana Drama) TR",
-    "internalName": "ArcanaDramaTR",
-    "authors": [
-      "ArcanaDrama"
-    ],
-    "description": "Türkçe dublaj ve Türkçe altyazı.",
-    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
-    "language": "tr",
-    "tvTypes": [
-      "TvSeries"
-    ],
-    "apiVersion": 1
-  },
-  {
-    "internalName": "ArcanaDramaDizilerim",
-    "name": "(Arcana Drama) Dizilerim",
-    "description": "Türkçe altyazı.",
-    "authors": [
-      "ArcanaDrama"
-    ],
-    "language": "tr",
-    "tvTypes": [
-      "TvSeries"
-    ],
     "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
+    "internalName": "ArcanaIzleGec",
+    "language": "tr",
+    "name": "(Arcana Drama) İzleGeç",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
     "status": 1,
-    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons"
+    "tvTypes": [
+      "TvSeries"
+    ]
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
+    "iconUrl": "https://fulldrama.xyz/assets/uploads/favicon.png",
+    "internalName": "ArcanaFullDrama",
+    "language": "tr",
+    "name": "(Arcana Drama) FullDrama",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ]
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe dublaj ve Türkçe altyazı.",
+    "internalName": "ArcanaDramaTR",
+    "language": "tr",
+    "name": "(Arcana Drama) TR",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ]
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı.",
+    "internalName": "ArcanaDramaDizilerim",
+    "language": "tr",
+    "name": "(Arcana Drama) Dizilerim",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ]
   },
   {
     "apiVersion": 1,
@@ -206,6 +206,21 @@
     "internalName": "ArcanaMiniDiziIzle",
     "language": "tr",
     "name": "(Arcana Drama) MiniDiziİzle",
+    "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
+    "status": 1,
+    "tvTypes": [
+      "TvSeries"
+    ]
+  },
+  {
+    "apiVersion": 1,
+    "authors": [
+      "ArcanaDrama"
+    ],
+    "description": "Türkçe altyazı.",
+    "internalName": "ArcanaLiderDrama",
+    "language": "tr",
+    "name": "(Arcana Drama) LiderDrama",
     "repositoryUrl": "https://github.com/banadabi/arcanadrama-addons",
     "status": 1,
     "tvTypes": [
