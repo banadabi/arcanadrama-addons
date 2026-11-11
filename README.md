@@ -24,6 +24,7 @@ https://raw.githubusercontent.com/banadabi/arcanadrama-addons/main/repo.json
 | (Arcana Drama) VerticalShorts | 5 | |
 | (Arcana Drama) AnyShort | 3 | Türkçe altyazı. |
 | (Arcana Drama) MiniDiziİzle | 1 | Türkçe altyazı. |
+| (Arcana Drama) LiderDrama | 19 | Türkçe altyazı. |
 
 ## Lisans
 
