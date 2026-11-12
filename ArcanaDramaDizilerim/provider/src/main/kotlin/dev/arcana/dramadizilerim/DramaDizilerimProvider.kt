@@ -49,7 +49,7 @@ class DramaDizilerimProvider(context:Context):MainAPI() {
     }
     override suspend fun load(url:String):LoadResponse? {
         val slug=DramaDizilerimContract.detailSlug(url) ?: return null
-        val s=parse { DramaDizilerimContract.series(http.text(url).body,slug) }
+        val s=parse { DramaDizilerimContract.series(http.text("$mainUrl/dizi/$slug").body,slug) }
         val chapters=s.chapters.map { c->newEpisode(DramaDizilerimContract.encode(c)) { season=c.season;episode=c.number;posterUrl=s.poster } }
         return newTvSeriesLoadResponse(s.title,s.url,TvType.TvSeries,chapters) {
             posterUrl=s.poster;plot=s.plot;tags=s.tags;year=s.year;score=Score.from10(s.score)

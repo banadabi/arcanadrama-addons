@@ -8,7 +8,7 @@ import java.time.Instant
 
 class DramaDizilerimContractTest {
     private val c=DramaDizilerimContract
-    private val base="https://dramadizilerim.com"
+    private val base=DramaDizilerimContract.BASE
     private val chapter=base+"/izle/sample?s=1&e=3"
     private fun ep()=c.chapter(chapter)!!
     private fun reject(block:()->Unit) { try { block();fail("must reject") } catch(_:IllegalArgumentException) {} catch(_:IllegalStateException) {} }
@@ -88,4 +88,17 @@ class DramaDizilerimContractTest {
         val now=Instant.parse("2026-11-08T00:00:00Z").toEpochMilli()
         assertEquals(now+120000,c.retryUntil("120",now));assertEquals(now+600000,c.retryUntil("Sun, 08 Nov 2026 00:10:00 GMT",now))
     }
+    @Test fun publisherDomainMigrationAcceptsNewCardsAndCanonicalizesLegacyIdentities() {
+        val html="""<article class="title-card"><a href="https://dramadizilerim1.com/dizi/current"><h3>Güncel Yapım</h3></a></article>
+        <article class="showcase-card"><a href="https://dramadizilerim.com/dizi/legacy"><h2>Eski Kayıt</h2></a></article>
+        <article class="title-card"><a href="https://dramadizilerim1.com.evil.invalid/dizi/fake"><h3>Yabancı</h3></a></article>"""
+        assertEquals(listOf(base+"/dizi/current",base+"/dizi/legacy"),c.home(html).map { it.url })
+        assertEquals(base+"/izle/sample?s=1&e=3",c.chapter("https://dramadizilerim.com/izle/sample?s=1&e=3")!!.url)
+        val saved="""{"v":1,"kind":"dramadizilerim_episode","url":"https://www.dramadizilerim.com/izle/sample?s=1&e=3"}"""
+        assertEquals(base+"/izle/sample?s=1&e=3",c.decode(saved)!!.url)
+        assertNull(c.own("https://dramadizilerim1.com.evil.invalid/dizi/fake"))
+        assertNull(c.own("https://user:pass@dramadizilerim1.com/dizi/fake"))
+        assertNull(c.own("https://dramadizilerim1.com:444/dizi/fake"))
+    }
+
 }

@@ -36,8 +36,8 @@ object DramaDizilerimLogin {
     fun enabled(context:Context)=context.applicationContext.getSharedPreferences(PREFS,Context.MODE_PRIVATE).getBoolean("enabled",false)
     suspend fun userAgent(context:Context):String=withContext(Dispatchers.Main.immediate) { WebSettings.getDefaultUserAgent(context.applicationContext) }
 
-    private const val LOGIN = "https://dramadizilerim.com/giris"
-    private val hosts = setOf("dramadizilerim.com")
+    private const val LOGIN = DramaDizilerimContract.BASE+"/giris"
+    private val hosts = setOf("dramadizilerim1.com")
 
     private fun allowed(url: String): Boolean = runCatching {
         val uri = URI(url)

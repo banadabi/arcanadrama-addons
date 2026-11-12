@@ -12,7 +12,9 @@ import java.time.format.DateTimeFormatter
 
 /** Normal publisher SSR/Flight and playback records, without executing JavaScript or minting tickets. */
 internal object DramaDizilerimContract {
-    const val BASE="https://dramadizilerim.com"
+    const val BASE="https://dramadizilerim1.com"
+    // The publisher's current canonical origin; retain only observed legacy origins for saved identities.
+    private val sourceHosts=setOf("dramadizilerim1.com","dramadizilerim.com","www.dramadizilerim.com")
     private val slugPattern=Regex("[A-Za-z0-9][A-Za-z0-9_-]{0,199}")
     data class Card(val title:String,val url:String,val poster:String?,val count:Int?,val year:Int?)
     data class Listing(val cards:List<Card>,val more:Boolean)
@@ -28,7 +30,7 @@ internal object DramaDizilerimContract {
         require(!u.host.contains(':') && u.host.lowercase().trimEnd('.')!="localhost")
         raw
     }.getOrNull()
-    fun own(raw:String):String?=https(raw)?.takeIf { URI(it).host.lowercase() in setOf("dramadizilerim.com","www.dramadizilerim.com") }
+    fun own(raw:String):String?=https(raw)?.takeIf { URI(it).host.lowercase() in sourceHosts }
     fun absolute(raw:String,base:String=BASE+"/")=runCatching { URI(base).resolve(raw.trim()).toASCIIString() }.getOrNull()?.let(::https)
     private fun query(u:URI):Map<String,String> {
         val parts=u.rawQuery?.split('&') ?: return emptyMap()
@@ -50,7 +52,7 @@ internal object DramaDizilerimContract {
         val s=if(q.isEmpty())1 else q.getValue("s").toInt()
         val n=if(q.isEmpty())1 else q.getValue("e").toInt()
         require(s>0 && n>0)
-        Chapter(slug,s,n,url)
+        Chapter(slug,s,n,BASE+u.rawPath+(u.rawQuery?.let { "?$it" } ?: ""))
     }.getOrNull()
     fun encode(c:Chapter)=JSONObject().put("v",1).put("kind","dramadizilerim_episode").put("url",c.url).toString()
     fun decode(raw:String):Chapter?=runCatching {
@@ -63,7 +65,8 @@ internal object DramaDizilerimContract {
         val a=if(node.tagName()=="a" && detailSlug(absolute(node.attr("href")).orEmpty())!=null)node
             else node.select("a[href]").firstOrNull { detailSlug(absolute(it.attr("href")).orEmpty())!=null } ?: return null
         if(a.attr("data-honeypot")=="1" || a.attr("aria-hidden")=="true")return null
-        val url=absolute(a.attr("href")) ?: return null
+        val slug=detailSlug(absolute(a.attr("href")).orEmpty()) ?: return null
+        val url="$BASE/dizi/$slug"
         val img=node.selectFirst("img")
         val title=node.selectFirst(".card-caption h3,.card-caption h2,h3,h2")?.text()?.trim()?.takeIf(String::isNotBlank)
             ?: img?.attr("alt")?.trim()?.takeIf(String::isNotBlank) ?: return null

@@ -609,132 +609,6 @@
       ]
     },
     {
-      "name": "ArcanaDramaDizilerim",
-      "version": 3,
-      "original_source_zip_sha256": "4bafc652b645eeac553f7c166031565fcaa342e81d5c4a3e0efd4ef52ce2bdea",
-      "source_code_unchanged": true,
-      "artifact_sha256": "c3f908b993c42a032c738a136d841c50e19d4c676782425b731b5847459d44b6",
-      "source_fingerprint": "1e7896f6fc1895d2bf349bc858f08967a238fb25d9c41aaf4a5d266f1c01f353",
-      "change": "First public native DramaDizilerim release. Reuse frozen v3; JSON Flight control records and series SEO / selected watch identities validated separately.",
-      "files": [
-        {
-          "path": "ArcanaDramaDizilerim/LICENSE",
-          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
-          "size": 35149
-        },
-        {
-          "path": "ArcanaDramaDizilerim/README.md",
-          "sha256": "e8e74ca83fa72dad3e5d48b62713b1e57b949eb2abb69b3be413a272cc34ac5f",
-          "size": 2512
-        },
-        {
-          "path": "ArcanaDramaDizilerim/build.gradle.kts",
-          "sha256": "74f299b886d2810d31b3e50d7e83647e3a5dbc656d54de711241659752d29c9b",
-          "size": 131
-        },
-        {
-          "path": "ArcanaDramaDizilerim/compile-api/build.gradle.kts",
-          "sha256": "a224b875a64fa7c16ddc032858861ccf83a0db130cda0a1f62c28574a6fa27cd",
-          "size": 424
-        },
-        {
-          "path": "ArcanaDramaDizilerim/compile-api/src/main/AndroidManifest.xml",
-          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
-          "size": 72
-        },
-        {
-          "path": "ArcanaDramaDizilerim/compile-api/src/main/java/com/lagradost/cloudstream3/plugins/Plugin.kt",
-          "sha256": "ebfe2c713b04d3c241769150da23a45f0a0dbc2ddaa8e3dc745796678f0b0e5e",
-          "size": 950
-        },
-        {
-          "path": "ArcanaDramaDizilerim/gradle/wrapper/gradle-wrapper.jar",
-          "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
-          "size": 45457
-        },
-        {
-          "path": "ArcanaDramaDizilerim/gradle/wrapper/gradle-wrapper.properties",
-          "sha256": "3cbe35d0020d8393c73f4cc2572838d1db338dd27885dd4d88c46b4d28f762e0",
-          "size": 281
-        },
-        {
-          "path": "ArcanaDramaDizilerim/gradle.properties",
-          "sha256": "eac3d66466c0e04ae93dc2cea1cbd5a82e86d5907b0ea6f4361693fe27a7e2d0",
-          "size": 98
-        },
-        {
-          "path": "ArcanaDramaDizilerim/gradlew",
-          "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
-          "size": 8618
-        },
-        {
-          "path": "ArcanaDramaDizilerim/libs/jsoup-1.23.2-patched.jar",
-          "sha256": "343ddc0a3c810f6610288d07b7b0c8e977342bd0def38cc77bd3281831c715d0",
-          "size": 532928
-        },
-        {
-          "path": "ArcanaDramaDizilerim/libs/jsoup-LICENSE.txt",
-          "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1",
-          "size": 1102
-        },
-        {
-          "path": "ArcanaDramaDizilerim/manifest.json",
-          "sha256": "d5e7acca35a7ad4e969b823d20dfda18cc97a4f06d952d13f7b3642675a93025",
-          "size": 143
-        },
-        {
-          "path": "ArcanaDramaDizilerim/provider/build.gradle.kts",
-          "sha256": "a72aefc05de63e790114ec578c03624a44703b002703cc23f81d90d47e4d06b5",
-          "size": 908
-        },
-        {
-          "path": "ArcanaDramaDizilerim/provider/src/main/AndroidManifest.xml",
-          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
-          "size": 72
-        },
-        {
-          "path": "ArcanaDramaDizilerim/provider/src/main/kotlin/dev/arcana/dramadizilerim/ArcanaDramaDizilerimPlugin.kt",
-          "sha256": "d5337f6423307e454cc219bb4a1602cc27d97e15e7f2a1900cef629a190c46cf",
-          "size": 591
-        },
-        {
-          "path": "ArcanaDramaDizilerim/provider/src/main/kotlin/dev/arcana/dramadizilerim/DramaDizilerimContract.kt",
-          "sha256": "d7e6e38bd8cb8510511edeef9ab9b2cd8315aa235686f634ba33f8065c9c0e5f",
-          "size": 15880
-        },
-        {
-          "path": "ArcanaDramaDizilerim/provider/src/main/kotlin/dev/arcana/dramadizilerim/DramaDizilerimHttp.kt",
-          "sha256": "1a83791a7533ec407c3b612361f913884a9ba3a9faad5d3fa6235195972ffb89",
-          "size": 11206
-        },
-        {
-          "path": "ArcanaDramaDizilerim/provider/src/main/kotlin/dev/arcana/dramadizilerim/DramaDizilerimLogin.kt",
-          "sha256": "9af4f65f0126d53e1403063e28f5eb907e4cbc0d308df01f87d12e3f17faee8e",
-          "size": 8633
-        },
-        {
-          "path": "ArcanaDramaDizilerim/provider/src/main/kotlin/dev/arcana/dramadizilerim/DramaDizilerimProvider.kt",
-          "sha256": "11d018f466ece4fbcb068bf0fca1e2e00bff587827ab8d06578bf6fb69309c93",
-          "size": 6534
-        },
-        {
-          "path": "ArcanaDramaDizilerim/provider/src/test/kotlin/dev/arcana/dramadizilerim/DramaDizilerimContractTest.kt",
-          "sha256": "0a06e062e19d42e18a4d87e326c9efe717623bd8244d775d3868a67fc2d00335",
-          "size": 7590
-        },
-        {
-          "path": "ArcanaDramaDizilerim/release-inputs.json",
-          "sha256": "bf4fafb0ad6968d69b502883f214bab80c206c03955a8bc1d60eaa95977a6372",
-          "size": 757
-        },
-        {
-          "path": "ArcanaDramaDizilerim/settings.gradle.kts",
-          "sha256": "d4f02f755427577b017f820d634cfae0bb67ae2a9c8acc33d9ab9ab5a77ffc3f",
-          "size": 267
-        }
-      ]
-    },
-    {
       "name": "ArcanaDramaVakti",
       "version": 1,
       "artifact_sha256": "8ef656f93f3e58b662d3a585b346d95d36112b910651f176faeb48657f534fbd",
@@ -2138,6 +2012,130 @@
           "path": "ArcanaLiderDrama/settings.gradle.kts",
           "sha256": "a8feee11cc48351b7092dc354a09caf8a4ce9c44b21f992413efa2ad1e0d1f4e",
           "size": 263
+        }
+      ]
+    },
+    {
+      "name": "ArcanaDramaDizilerim",
+      "version": 4,
+      "artifact_sha256": "c8d02f8d56cc2efa691916daddf5aa569bba363245321f8716f33e0d89b038c6",
+      "source_fingerprint": "3f897f88c12032f191be753e18623d01320a41713082ccf7f94e8cfeaf04037f",
+      "change": "Publisher canonical origin migration; legacy saved series and episode identities normalize to current origin. Opt-in account cookies remain current-origin only. Same parser/media/access guards. Owner acceptance and independent device limits recorded separately.",
+      "files": [
+        {
+          "path": "ArcanaDramaDizilerim/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "size": 35149
+        },
+        {
+          "path": "ArcanaDramaDizilerim/README.md",
+          "sha256": "e8e74ca83fa72dad3e5d48b62713b1e57b949eb2abb69b3be413a272cc34ac5f",
+          "size": 2512
+        },
+        {
+          "path": "ArcanaDramaDizilerim/build.gradle.kts",
+          "sha256": "74f299b886d2810d31b3e50d7e83647e3a5dbc656d54de711241659752d29c9b",
+          "size": 131
+        },
+        {
+          "path": "ArcanaDramaDizilerim/compile-api/build.gradle.kts",
+          "sha256": "a224b875a64fa7c16ddc032858861ccf83a0db130cda0a1f62c28574a6fa27cd",
+          "size": 424
+        },
+        {
+          "path": "ArcanaDramaDizilerim/compile-api/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaDramaDizilerim/compile-api/src/main/java/com/lagradost/cloudstream3/plugins/Plugin.kt",
+          "sha256": "ebfe2c713b04d3c241769150da23a45f0a0dbc2ddaa8e3dc745796678f0b0e5e",
+          "size": 950
+        },
+        {
+          "path": "ArcanaDramaDizilerim/gradle/wrapper/gradle-wrapper.jar",
+          "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+          "size": 45457
+        },
+        {
+          "path": "ArcanaDramaDizilerim/gradle/wrapper/gradle-wrapper.properties",
+          "sha256": "3cbe35d0020d8393c73f4cc2572838d1db338dd27885dd4d88c46b4d28f762e0",
+          "size": 281
+        },
+        {
+          "path": "ArcanaDramaDizilerim/gradle.properties",
+          "sha256": "eac3d66466c0e04ae93dc2cea1cbd5a82e86d5907b0ea6f4361693fe27a7e2d0",
+          "size": 98
+        },
+        {
+          "path": "ArcanaDramaDizilerim/gradlew",
+          "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
+          "size": 8618
+        },
+        {
+          "path": "ArcanaDramaDizilerim/libs/jsoup-1.23.2-patched.jar",
+          "sha256": "343ddc0a3c810f6610288d07b7b0c8e977342bd0def38cc77bd3281831c715d0",
+          "size": 532928
+        },
+        {
+          "path": "ArcanaDramaDizilerim/libs/jsoup-LICENSE.txt",
+          "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1",
+          "size": 1102
+        },
+        {
+          "path": "ArcanaDramaDizilerim/manifest.json",
+          "sha256": "78ec5e174f88f1b408b56a51bd382564cfeb753e1e5f10342c8ae6236b75b94a",
+          "size": 143
+        },
+        {
+          "path": "ArcanaDramaDizilerim/provider/build.gradle.kts",
+          "sha256": "a72aefc05de63e790114ec578c03624a44703b002703cc23f81d90d47e4d06b5",
+          "size": 908
+        },
+        {
+          "path": "ArcanaDramaDizilerim/provider/src/main/AndroidManifest.xml",
+          "sha256": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+          "size": 72
+        },
+        {
+          "path": "ArcanaDramaDizilerim/provider/src/main/kotlin/dev/arcana/dramadizilerim/ArcanaDramaDizilerimPlugin.kt",
+          "sha256": "d5337f6423307e454cc219bb4a1602cc27d97e15e7f2a1900cef629a190c46cf",
+          "size": 591
+        },
+        {
+          "path": "ArcanaDramaDizilerim/provider/src/main/kotlin/dev/arcana/dramadizilerim/DramaDizilerimContract.kt",
+          "sha256": "8ed2115a3d50c64eab0b460bc1db864345fe07bff5c97c42dca30673773a7636",
+          "size": 16154
+        },
+        {
+          "path": "ArcanaDramaDizilerim/provider/src/main/kotlin/dev/arcana/dramadizilerim/DramaDizilerimHttp.kt",
+          "sha256": "1a83791a7533ec407c3b612361f913884a9ba3a9faad5d3fa6235195972ffb89",
+          "size": 11206
+        },
+        {
+          "path": "ArcanaDramaDizilerim/provider/src/main/kotlin/dev/arcana/dramadizilerim/DramaDizilerimLogin.kt",
+          "sha256": "bf93764d73d25c57ae113fd7f2be90e397797268c88bdda908c1f1d872add1e0",
+          "size": 8636
+        },
+        {
+          "path": "ArcanaDramaDizilerim/provider/src/main/kotlin/dev/arcana/dramadizilerim/DramaDizilerimProvider.kt",
+          "sha256": "aee6ea7db766d94f4f77d7ac28091ffb2396a8e20f920c9eb73192038002f604",
+          "size": 6552
+        },
+        {
+          "path": "ArcanaDramaDizilerim/provider/src/test/kotlin/dev/arcana/dramadizilerim/DramaDizilerimContractTest.kt",
+          "sha256": "eae66ffafb492551665735021ddc465c2f70362e888f8ab9490b33d4658b2d36",
+          "size": 8716
+        },
+        {
+          "path": "ArcanaDramaDizilerim/release-inputs.json",
+          "sha256": "bf4fafb0ad6968d69b502883f214bab80c206c03955a8bc1d60eaa95977a6372",
+          "size": 757
+        },
+        {
+          "path": "ArcanaDramaDizilerim/settings.gradle.kts",
+          "sha256": "d4f02f755427577b017f820d634cfae0bb67ae2a9c8acc33d9ab9ab5a77ffc3f",
+          "size": 267
         }
       ]
     }

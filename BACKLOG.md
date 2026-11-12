@@ -16,3 +16,6 @@ Bu dosya eklenti kaynakları ve oynatma kabulünü izler.
 
 - [x] (Arcana Drama) LiderDrama19: kaynak ve telefon kullanıcı kabulü — 11 Kasım2026. Sürgünün Süpermarketi1–2 video ve Türkçe altyazı, orijinal uygulama ve güncel1.1.55(87) kabulü; paket2f8d961c/97994.
 - [ ] LiderDrama: Sare otomatik hazırlık süre aşımının nedeni ve önceki Seçilmiş Luna çözme hatası ayrı takip edilir; telefon kabulü bu kayıtları başarılıya çevirmedi.
+
+- [x] 2026-11-12: (Arcana Drama) Dizilerim4 canonical origin migration; owner accepted catalogue and first two episodes with Turkish subtitles in original Cloudstream and current Arcana Play. Exact c8d02f8d package, no video rerun or diagnostic-v5 release. Main publication receipt is recorded separately.
+- [ ] LiderDrama playback and two reported LiderShorts trending titles: owner regression reports, repairs pending; unrelated sources unchanged.
