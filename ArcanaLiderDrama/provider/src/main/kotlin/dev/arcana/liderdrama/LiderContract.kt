@@ -17,13 +17,16 @@ internal object LiderContract {
     data class Detail(val card:Card,val plot:String,val tags:List<String>,val chapters:List<Chapter>)
     data class Page(val cards:List<Card>,val page:Int,val pages:Int,val total:Int)
     data class Payload(val series:Long,val slug:String,val chapter:Long?,val number:Int)
-    data class Caption(val language:String,val url:String,val format:String)
-    data class Playback(val url:String,val type:String,val captions:List<Caption>) { override fun toString()="LiderPlayback([redacted])" }
+    enum class CaptionTransport { SOURCE_DOCUMENT, ISSUED_RESOURCE }
+    data class Caption(val language:String,val url:String,val format:String,
+        val referer:String?=null,val transport:CaptionTransport=CaptionTransport.SOURCE_DOCUMENT,
+        val scope:Pair<String,Int>?=null) { override fun toString()="LiderCaption([redacted])" }
+    data class Playback(val url:String,val type:String,val captions:List<Caption>,val referer:String?=null) { override fun toString()="LiderPlayback([redacted])" }
     fun id(v:Any?):Long {
         val n=when(v){is Int->v.toLong();is Long->v;else->error("Source integer identity missing")}
         require(n in 1..9_007_199_254_740_991L);return n
     }
-    fun slug(v:String)=v.also { require(it.matches(Regex("[a-z0-9][a-z0-9-]{0,239}"))) }
+    fun slug(v:String)=v.also { require(it.matches(Regex("[A-Za-z0-9][A-Za-z0-9-]{0,239}"))) }
     private fun number(v:Any?):Int?=when(v){is Int->v;is Long->v.takeIf{it in 0..100000}?.toInt();else->null}
     private fun text(j:JSONObject,k:String)=(j.opt(k)as?String).orEmpty().trim()
     private fun plain(v:String)=Jsoup.parse(v).text().trim()
@@ -38,7 +41,7 @@ internal object LiderContract {
     fun identity(raw:String):Pair<String,Long?>?=runCatching {
         require(raw.length<=4096);val u=URI(raw)
         require(u.scheme=="https"&&u.host=="liderdrama.com"&&u.port in setOf(-1,443)&&u.rawUserInfo==null&&u.rawQuery==null)
-        val m=Regex("/dizi/([a-z0-9][a-z0-9-]{0,239})/?").matchEntire(u.rawPath)?:error("Not a source detail")
+        val m=Regex("/dizi/([A-Za-z0-9][A-Za-z0-9-]{0,239})/?").matchEntire(u.rawPath)?:error("Not a source detail")
         val expected=u.rawFragment?.let { f->val v=Regex("lid=([1-9][0-9]{0,15})").matchEntire(f)?:error("Bad source identity");v.groupValues[1].toLong().also{require(it<=9_007_199_254_740_991L)} }
         m.groupValues[1] to expected
     }.getOrNull()
@@ -87,15 +90,31 @@ internal object LiderContract {
         val rawId=j.get("chapter");val chapter=if(schema==2&&rawId===JSONObject.NULL)null else id(rawId)
         val n=id(j.opt("number"));require(n<=10000);Payload(id(j.opt("series")),slug(j.getString("slug")),chapter,n.toInt())
     }.getOrNull()
-    fun playback(j:JSONObject):Playback {
+    fun playback(j:JSONObject,request:Payload?=null):Playback {
         require(j.opt("premium_required")!=true&&j.opt("available")!=false&&!LiderPolicy.error(j)&&LiderPolicy.denial(j)==null)
-        val url=media(j.getString("url"));val type=text(j,"t").lowercase(java.util.Locale.ROOT)
-        require(type in setOf("mp4","hls","m3u8"))
+        val issued=media(j.getString("url"));val relay=LiderIssuedResource.relay(issued)
+        val declaration=j.opt("t")
+        val type=if(declaration==null||declaration===JSONObject.NULL) {
+            relay?.kind?:error("Source media type missing")
+        }else {
+            require(declaration is String)
+            val t=declaration.trim().lowercase(java.util.Locale.ROOT)
+            require(t in setOf("mp4","hls","m3u8"))
+            if(t=="mp4")"mp4" else "hls"
+        }
+        require(relay==null||relay.kind==type)
+        val scope=request?.let{slug(it.slug);require(it.number in 1..10000);it.slug to it.number}
         val a=j.optJSONArray("subs")?:JSONArray();require(a.length()<=100)
         val captions=(0 until a.length()).map{i->val c=a.getJSONObject(i);val lang=text(c,"lang");require(lang.length in 1..100)
             val format=text(c,"format").lowercase(java.util.Locale.ROOT);require(format in setOf("vtt","srt"))
-            Caption(lang,media(c.getString("url")),format)
+            val source=media(c.getString("url"));val captionRelay=LiderIssuedResource.relay(source,format)
+            val url=captionRelay?.url?:source
+            val own=URI(url).host=="liderdrama.com"
+            if(own)require(URI(url).rawPath.startsWith("/subs/"))
+            else require(URI(url).rawPath.lowercase(java.util.Locale.ROOT).endsWith("."+format))
+            Caption(lang,url,format,captionRelay?.referer,
+                if(own)CaptionTransport.SOURCE_DOCUMENT else CaptionTransport.ISSUED_RESOURCE,scope)
         }
-        return Playback(url,if(type=="mp4")"mp4" else "hls",captions)
+        return Playback(relay?.url?:issued,type,captions,relay?.referer)
     }
 }

@@ -37,16 +37,24 @@ internal class LiderAutomaticCaptions(
     @Volatile private var closed=false
     @Volatile private var cancelActive:(()->Unit)?=null
     @Volatile private var activeRun=0L
-    suspend fun resolve(raw:String,expectedSlug:String,expectedNumber:Int,base:OkHttpClient,budgetMs:Long):String {
+    suspend fun resolve(caption:LiderContract.Caption,expectedSlug:String,expectedNumber:Int,base:OkHttpClient,nativeUa:String,budgetMs:Long):String {
         val queuedAt=SystemClock.elapsedRealtime()
         return mutex.withLock {
-        val target=LiderAutomaticCaptionPolicy.target(raw,expectedSlug,expectedNumber)
+        val target=if(caption.transport==LiderContract.CaptionTransport.SOURCE_DOCUMENT)
+            LiderAutomaticCaptionPolicy.target(caption.url,expectedSlug,expectedNumber)
+        else LiderAutomaticCaptionPolicy.issuedTarget(caption,expectedSlug,expectedNumber)
         val available=LiderAutomaticCaptionPolicy.budget(budgetMs,SystemClock.elapsedRealtime()-queuedAt)
         permitted();currentCoroutineContext().ensureActive()
         if(closed||available<1500||backoff.blocked())throw LiderCaptionUnavailable()
         // The host's loadLinks step is30s; API work already consumed part of it.
         LiderAutomaticCaptionAttempt.run(permitted,{block(300_000L)}) {
-            withTimeoutOrNull(available) { browser(target,base) }?:throw LiderCaptionUnavailable()
+            withTimeoutOrNull(available) {
+                if(caption.transport==LiderContract.CaptionTransport.SOURCE_DOCUMENT)browser(target,base)
+                else {
+                    admission();permitted();currentCoroutineContext().ensureActive()
+                    fetchIssued(target,base,nativeUa,caption.referer)
+                }
+            }?:throw LiderCaptionUnavailable()
         }
         }
     }
@@ -69,7 +77,7 @@ internal class LiderAutomaticCaptions(
             fun failed(error:Throwable=LiderCaptionUnavailable()) {
                 if(!ticket.live())return
                 val authoritative=runCatching{permitted()}.exceptionOrNull()?:error
-                mark("FAILED");dispose();bodyJob?.cancel()
+                mark("FAILED");dispose();bodyJob?.cancel(null)
                 if(continuation.isActive)continuation.resumeWithException(authoritative)
             }
             fun limited(retry:String?) {
@@ -141,10 +149,11 @@ internal class LiderAutomaticCaptions(
                     override fun onPageFinished(v:WebView?,url:String?){if(v===view&&url!=null&&live())probe(url)}
                     override fun onReceivedHttpError(v:WebView?,r:WebResourceRequest?,response:WebResourceResponse?) {
                         if(response?.statusCode==429)limited(response.responseHeaders?.entries?.firstOrNull{it.key.equals("Retry-After",true)}?.value)
+                        if(r?.isForMainFrame==true&&response!=null)mark(when(response.statusCode){401->"MAIN_HTTP_401";403->"MAIN_HTTP_403";429->"MAIN_HTTP_429";else->"MAIN_HTTP_OTHER"})
                         // A normal managed source challenge may complete in this same renderer.
                         // No widget is clicked and no error document authenticates a caption.
                     }
-                    override fun onReceivedError(v:WebView?,r:WebResourceRequest?,e:android.webkit.WebResourceError?){if(r?.isForMainFrame==true&&live())failed()}
+                    override fun onReceivedError(v:WebView?,r:WebResourceRequest?,e:android.webkit.WebResourceError?){if(r?.isForMainFrame==true&&live()){mark("MAIN_NETWORK_ERROR");failed()}}
                 }
                 view.setDownloadListener{url,_,_,mime,_->
                     if(live()&&LiderAutomaticCaptionPolicy.same(url,target)&&mime.orEmpty().substringBefore(';').lowercase(java.util.Locale.ROOT)in
@@ -153,7 +162,7 @@ internal class LiderAutomaticCaptions(
                     }
                 }
                 cancelActive={failed()}
-                continuation.invokeOnCancellation {Handler(Looper.getMainLooper()).post{bodyJob?.cancel();dispose()}}
+                continuation.invokeOnCancellation {Handler(Looper.getMainLooper()).post{bodyJob?.cancel(null);dispose()}}
                 permitted();if(!live())throw LiderCaptionUnavailable()
                 mark("STARTED")
                 // Real HTTPS navigation, never loadData/about:blank as a forged source origin.
@@ -175,6 +184,7 @@ internal class LiderAutomaticCaptions(
                 override fun onResponse(call:Call,response:Response) {
                     try {
                         val text=response.use{r->
+                            if(r.code!=200)Log.i("ArcanaLiderAuto",when(r.code){401->"event=NATIVE_BODY_HTTP_401";403->"event=NATIVE_BODY_HTTP_403";429->"event=NATIVE_BODY_HTTP_429";else->"event=NATIVE_BODY_HTTP_OTHER"})
                             if(r.code==429){rateLimited(r.header("Retry-After"));throw LiderCaptionUnavailable()}
                             permitted()
                             if(!continuation.isActive)throw CancellationException()
@@ -188,6 +198,47 @@ internal class LiderAutomaticCaptions(
                         }
                         if(continuation.isActive)continuation.resume(text,onCancellation={_,_,_->})
                     }catch(e:Exception){response.close();if(continuation.isActive)continuation.resumeWithException(if(e is com.lagradost.cloudstream3.ErrorLoadingException)e else LiderCaptionUnavailable())}
+                }
+            })
+        }
+    }
+    /** A normal API-issued public resource, never a fallback after a browser/access denial. */
+    private suspend fun fetchIssued(target:String,base:OkHttpClient,ua:String,referer:String?):String {
+        permitted();currentCoroutineContext().ensureActive()
+        val client=base.newBuilder().cookieJar(CookieJar.NO_COOKIES).followRedirects(false).followSslRedirects(false).build()
+        val request=Request.Builder().url(target).header("User-Agent",ua).header("Accept-Encoding","identity")
+        referer?.let{request.header("Referer",it)}
+        val call=client.newCall(request.build())
+        Log.i("ArcanaLiderAuto","event=ISSUED_BODY_STARTED")
+        return suspendCancellableCoroutine { continuation ->
+            continuation.invokeOnCancellation{call.cancel()}
+            call.enqueue(object:Callback {
+                override fun onFailure(call:Call,e:IOException){
+                    if(continuation.isActive)continuation.resumeWithException(LiderCaptionUnavailable())
+                }
+                override fun onResponse(call:Call,response:Response) {
+                    try {
+                        val text=response.use{r->
+                            // Delivered429 remains authoritative even if caller cancellation just won.
+                            if(r.code==429){rateLimited(r.header("Retry-After"));throw LiderCaptionUnavailable()}
+                            permitted()
+                            if(!continuation.isActive)throw CancellationException()
+                            if(r.code in setOf(401,403)){block(1_800_000);throw LiderCaptionUnavailable()}
+                            if(r.code!=200||r.request.url.toString()!=target||r.body.contentLength()>LiderAutomaticCaptionPolicy.LIMIT)
+                                throw LiderCaptionUnavailable()
+                            val input=r.body.source();input.request(LiderAutomaticCaptionPolicy.LIMIT.toLong()+1)
+                            if(input.buffer.size>LiderAutomaticCaptionPolicy.LIMIT)throw LiderCaptionUnavailable()
+                            val body=LiderAutomaticCaptionPolicy.body(r.code,target,r.request.url.toString(),input.readByteArray())
+                            permitted();if(!continuation.isActive)throw CancellationException()
+                            body
+                        }
+                        Log.i("ArcanaLiderAuto","event=ISSUED_BODY_VERIFIED")
+                        if(continuation.isActive)continuation.resume(text,onCancellation={_,_,_->})
+                    }catch(e:Exception){
+                        response.close()
+                        if(continuation.isActive)continuation.resumeWithException(
+                            if(e is com.lagradost.cloudstream3.ErrorLoadingException)e else LiderCaptionUnavailable())
+                    }
                 }
             })
         }

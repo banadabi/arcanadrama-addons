@@ -37,7 +37,7 @@ class LiderProvider(context:Context):MainAPI() {
     override fun getVideoInterceptor(extractorLink:ExtractorLink):Interceptor=media()
     override val mainPage get():List<MainPageData> {
         val f=settings.read()
-        return LiderCataloguePlan.entries(f.encode(),f.default,f.q.isEmpty()).flatMap{mainPageOf(it.data to it.label)}
+        return LiderCataloguePlan.entries(f.encode(),f.q.isEmpty()).flatMap{mainPageOf(it.data to it.label)}
     }
     fun showSettings(owner:Context)=settings.show(owner,{!closed},{epoch.incrementAndGet()})
     private fun active(version:Long,snapshot:String) {
@@ -55,18 +55,18 @@ class LiderProvider(context:Context):MainAPI() {
         result
     }
     private fun api(path:String)=(mainUrl+path).toHttpUrl().newBuilder()
-    private fun browse(page:Int,f:LiderSettings.Filters)=api("/api/dramas").addQueryParameter("page",page.toString()).addQueryParameter("limit","24")
-        .addQueryParameter("dil","tr").addQueryParameter("lang","tr").addQueryParameter("sort",f.sort)
-        .apply{if(f.dubbed)addQueryParameter("dubbed","1");if(f.genre!="all")addQueryParameter("genre",f.genre);if(f.episodes!="all")addQueryParameter("episodes",f.episodes);if(f.q.isNotEmpty())addQueryParameter("search",f.q)}.build().toString()
+    private fun browse(page:Int,f:LiderSettings.Filters)=api("/api/dramas").apply {
+        LiderCataloguePlan.query(page,f.q,f.genre,f.sort,f.dubbed,f.episodes).forEach{(key,value)->addQueryParameter(key,value)}
+    }.build().toString()
     private fun item(c:LiderContract.Card)=newTvSeriesSearchResponse(c.title,LiderContract.route(c),TvType.TvSeries){posterUrl=c.poster;episodes=c.count;score=Score.from10(c.score)}
     override suspend fun getMainPage(page:Int,request:MainPageRequest):HomePageResponse=guarded {
         val version=epoch.get();val f=settings.read();val snapshot=f.encode();active(version,snapshot)
         if(page<1)return@guarded newHomePageResponse(request.name,emptyList(),false)
-        // Old host snapshots may still carry the literal Home key. It aliases the same
-        // ordinary paginated catalogue only while default filters remain current.
-        LiderCataloguePlan.requireCurrent(request.data,snapshot,f.default)
+        val shelf=LiderCataloguePlan.resolve(request.data,snapshot,f.default,f.q.isEmpty())
         if(f.q.isNotEmpty()&&f.q.length<2)return@guarded newHomePageResponse(request.name,emptyList(),false)
-        val result=LiderContract.page(metadata(browse(page,f)),page);active(version,snapshot)
+        val effective=shelf?.let{f.copy(sort=it.sort,dubbed=it.dubbed)}?:f
+        val result=LiderContract.page(metadata(browse(page,effective)),page);active(version,snapshot)
+        android.util.Log.i("ArcanaLiderCatalogue","row=${shelf?.id?:"search"} page=${result.page} cards=${result.cards.size} more=${result.page<result.pages}")
         newHomePageResponse(request.name,result.cards.map(::item),result.page<result.pages)
     }
     override suspend fun search(query:String):List<SearchResponse> = guarded {
@@ -97,14 +97,14 @@ class LiderProvider(context:Context):MainAPI() {
             val url=api("/api/video").addQueryParameter("slug",p.slug).addQueryParameter("ep",p.number.toString()).build().toString()
             val raw=http.json(url,mainUrl+"/dizi/"+p.slug)
             if(raw.opt("premium_required")==true)throw ErrorLoadingException("LiderDrama bu bölüm için kaynak hesabı yetkisi istiyor.")
-            val playback=LiderContract.playback(raw)
+            val playback=LiderContract.playback(raw,p)
             val prepared=mutableListOf<SubtitleFile>()
             for(c in playback.captions.sortedBy{if(LiderAutomaticCaptionPolicy.required(it.language))0 else 1}) {
                 val u=c.url.toHttpUrl()
                 // Source static caption paths have no translation/generation API.
                 val required=LiderAutomaticCaptionPolicy.required(c.language)
                 val bytes=if(u.host=="liderdrama.com"||required) {
-                    val text=try { http.captionText(c.url,p.slug,p.number,captionDeadline-android.os.SystemClock.elapsedRealtime()) }
+                    val text=try { http.captionText(c,p.slug,p.number,captionDeadline-android.os.SystemClock.elapsedRealtime()) }
                     catch(_:LiderCaptionUnavailable) {
                         if(required)throw ErrorLoadingException("Bu bölümün Türkçe altyazısı hazırlanamadı. Daha sonra yeniden deneyin.")
                         continue
@@ -115,12 +115,12 @@ class LiderProvider(context:Context):MainAPI() {
                     }
                     text.toByteArray(Charsets.UTF_8)
                 }else null
-                val caption=media().register(c.url,"",http.mediaClient,c.format,http.ua,null,bytes)
+                val caption=media().register(c.url,c.referer.orEmpty(),http.mediaClient,c.format,http.ua,null,bytes)
                 val label=when(c.language.lowercase(java.util.Locale.ROOT)){"tr","tur","tr-tr"->"Turkish";"en","eng"->"English";else->c.language}
                 http.permitted();currentCoroutineContext().ensureActive();prepared.add(newSubtitleFile(label,caption))
             }
             http.permitted();currentCoroutineContext().ensureActive();prepared.forEach(subtitleCallback)
-            val stream=media().register(playback.url,"",http.mediaClient,playback.type,http.ua)
+            val stream=media().register(playback.url,playback.referer.orEmpty(),http.mediaClient,playback.type,http.ua)
             http.permitted();currentCoroutineContext().ensureActive()
             callback(newExtractorLink(name,"LiderDrama",stream,if(playback.type=="hls")ExtractorLinkType.M3U8 else ExtractorLinkType.VIDEO){referer="";quality=Qualities.Unknown.value})
             true

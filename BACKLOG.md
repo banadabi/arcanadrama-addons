@@ -19,3 +19,6 @@ Bu dosya eklenti kaynakları ve oynatma kabulünü izler.
 
 - [x] 2026-11-12: (Arcana Drama) Dizilerim4 canonical origin migration; owner accepted catalogue and first two episodes with Turkish subtitles in original Cloudstream and current Arcana Play. Exact c8d02f8d package, no video rerun or diagnostic-v5 release. Main publication receipt is recorded separately.
 - [ ] LiderDrama playback and two reported LiderShorts trending titles: owner regression reports, repairs pending; unrelated sources unchanged.
+
+- [x] 2026-11-13: (Arcana Drama) LiderDrama29 media/caption API contract repair; owner accepted blue original Cloudstream and current main Arcana1.1.55(87) Play first two Luna episodes with video/Turkish captions, exact cd54/105329B. Frozen package reused without rebuilding; final main-publication receipt recorded separately. Phone installed hashes/cold/natural-next were not independently measured; Sare goldfish decoder failure is retained.
+- [ ] Red Cloudstream compatibility and Sare goldfish decoder failure remain distinct; LiderShort9 Arcana access boundary remains open.

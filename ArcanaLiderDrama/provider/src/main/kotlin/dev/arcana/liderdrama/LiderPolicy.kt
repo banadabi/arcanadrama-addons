@@ -47,9 +47,9 @@ internal object LiderPolicy {
                 query["dubbed"]?.let{require(it=="1")};query["genre"]?.let{require(it in LiderContract.genres&&it!="all")}
                 query["episodes"]?.let{require(it in LiderContract.counts&&it!="all")};query["search"]?.let{require(it.length in 2..100&&it.none{c->c.code<32||c.code==127})}
             }
-            p.matches(Regex("/api/drama/[a-z0-9][a-z0-9-]{0,239}"))->require(query==mapOf("lang" to "tr"))
+            p.matches(Regex("/api/drama/[A-Za-z0-9][A-Za-z0-9-]{0,239}"))->require(query==mapOf("lang" to "tr"))
             p=="/api/video"->{require(query.keys==setOf("slug","ep"));LiderContract.slug(query.getValue("slug"));require(query["ep"]?.toIntOrNull() in 1..10000)}
-            p.matches(Regex("/subs/[a-z0-9][a-z0-9-]{0,239}/[1-9][0-9]{0,4}\\.(?:vtt|srt|m3u8)"))->require(query.isEmpty())
+            p.matches(Regex("/subs/[A-Za-z0-9][A-Za-z0-9-]{0,239}/[1-9][0-9]{0,4}\\.(?:vtt|srt|m3u8)"))->require(query.isEmpty())
             else->throw IllegalArgumentException("Undeclared source request")
         }
     }

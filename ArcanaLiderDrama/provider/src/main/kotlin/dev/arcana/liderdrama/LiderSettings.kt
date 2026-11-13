@@ -25,9 +25,9 @@ internal class LiderSettings(context:Context) {
                     adapter=ArrayAdapter(a,android.R.layout.simple_spinner_dropdown_item,options.values.toList());setSelection(keys.indexOf(current).coerceAtLeast(0));box.addView(this)
                 }
             }
-            val genre=select("Tür",LiderContract.genres,original.genre);val sort=select("Sıralama",LiderContract.sorts,original.sort);val counts=select("Bölüm sayısı",LiderContract.counts,original.episodes)
-            val dubbed=CheckBox(a).apply{text="Yalnız Türkçe dublajlı";isChecked=original.dubbed};box.addView(dubbed)
-            AlertDialog.Builder(a).setTitle(LiderContract.NAME).setMessage("Kaydettikten sonra kaynak ana sayfasını yenileyin.").setView(ScrollView(a).apply{addView(box)})
+            val genre=select("Tür",LiderContract.genres,original.genre);val sort=select("Arama sıralaması",LiderContract.sorts,original.sort);val counts=select("Bölüm sayısı",LiderContract.counts,original.episodes)
+            val dubbed=CheckBox(a).apply{text="Aramada yalnız Türkçe dublajlı";isChecked=original.dubbed};box.addView(dubbed)
+            AlertDialog.Builder(a).setTitle(LiderContract.NAME).setMessage("Tür ve bölüm sayısı raflara da uygulanır. Sıralama ve dublaj seçimi arama içindir. Kaydettikten sonra kaynak ana sayfasını yenileyin.").setView(ScrollView(a).apply{addView(box)})
                 .setNegativeButton("İptal",null).setPositiveButton("Kaydet"){_,_->if(active()) {
                     p.edit().putString("q",query.text.toString().trim().take(100)).putString("genre",LiderContract.genres.keys.elementAt(genre.selectedItemPosition))
                         .putString("sort",LiderContract.sorts.keys.elementAt(sort.selectedItemPosition)).putString("episodes",LiderContract.counts.keys.elementAt(counts.selectedItemPosition)).putBoolean("dubbed",dubbed.isChecked).apply();changed()

@@ -8,11 +8,20 @@ internal object LiderAutomaticCaptionPolicy {
     const val LIMIT=2_000_000
     fun budget(callerBudget:Long,queuedMs:Long)=minOf(25_000L,maxOf(0L,callerBudget-queuedMs))
     fun required(language:String)=language.lowercase(java.util.Locale.ROOT).substringBefore('-')in setOf("tr","tur")
+    fun issuedTarget(caption:LiderContract.Caption,expectedSlug:String,expectedNumber:Int):String {
+        require(caption.transport==LiderContract.CaptionTransport.ISSUED_RESOURCE)
+        LiderContract.slug(expectedSlug);require(expectedNumber in 1..10000)
+        require(caption.scope==(expectedSlug to expectedNumber))
+        val checked=LiderContract.media(caption.url)
+        require(URI(checked).host!="liderdrama.com")
+        require(caption.format in setOf("vtt","srt")&&URI(checked).rawPath.lowercase(java.util.Locale.ROOT).endsWith("."+caption.format))
+        return checked
+    }
     fun target(raw:String,expectedSlug:String,expectedNumber:Int):String {
         val u=URI(raw)
         require(source(raw)&&u.rawQuery==null&&u.rawFragment==null)
-        require(u.rawPath.matches(Regex("/subs/[a-z0-9][a-z0-9-]{0,239}/[1-9][0-9]{0,4}\\.(?:vtt|srt)")))
-        require(expectedSlug.matches(Regex("[a-z0-9][a-z0-9-]{0,239}"))&&expectedNumber in 1..10000)
+        require(u.rawPath.matches(Regex("/subs/[A-Za-z0-9][A-Za-z0-9-]{0,239}/[1-9][0-9]{0,4}\\.(?:vtt|srt)")))
+        require(expectedSlug.matches(Regex("[A-Za-z0-9][A-Za-z0-9-]{0,239}"))&&expectedNumber in 1..10000)
         val path="/subs/$expectedSlug/$expectedNumber"
         require(u.rawPath=="$path.vtt"||u.rawPath=="$path.srt")
         return u.toASCIIString()

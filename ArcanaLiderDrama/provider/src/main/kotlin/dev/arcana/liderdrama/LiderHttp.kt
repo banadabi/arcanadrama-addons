@@ -83,9 +83,9 @@ internal class LiderHttp(context: Context) {
         val logical=denial?.let{" denial=$it"}.orEmpty()
         Log.w("ArcanaLiderAccess","phase=${phase.name} http=${response.code}$logical response=${kind.name}")
     }
-    suspend fun captionText(raw:String,expectedSlug:String,expectedNumber:Int,budgetMs:Long):String {
+    suspend fun captionText(caption:LiderContract.Caption,expectedSlug:String,expectedNumber:Int,budgetMs:Long):String {
         permitted()
-        return automaticCaptions.resolve(raw,expectedSlug,expectedNumber,mediaClient,budgetMs)
+        return automaticCaptions.resolve(caption,expectedSlug,expectedNumber,mediaClient,ua,budgetMs)
     }
     suspend fun text(raw: String, referer: String = LiderContract.BASE+"/", body: JSONObject? = null): String = pace.withLock {
         permitted();currentCoroutineContext().ensureActive()

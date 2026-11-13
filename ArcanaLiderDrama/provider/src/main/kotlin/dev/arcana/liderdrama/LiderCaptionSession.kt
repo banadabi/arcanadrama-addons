@@ -111,7 +111,7 @@ internal class LiderCaptionSession(
                 runCatching{Log.i("ArcanaLiderVerify","session="+ticket.generation+" event="+event.name)}
             }
             fun abort() {
-                verificationJob?.cancel()
+                verificationJob?.cancel(null)
                 runCatching{web.evaluateJavascript("(function(){var c=window[$controlJs],r=window[$readerJs];if(c)c.abort();if(r)r.cancel().catch(function(){});})();",null)}
             }
             fun unavailable() {
@@ -335,7 +335,7 @@ internal class LiderCaptionSession(
                         val old=verificationJob
                         verificationJob=null
                         if(old?.isActive==true){
-                            old.cancel()
+                            old.cancel(null)
                             mark(LiderVerificationEvent.QUEUED_NAV_CANCELLED)
                         }
                         // No request admitted: allow the publisher's normal next document to commit.
@@ -409,7 +409,7 @@ internal class LiderCaptionSession(
         }
     }
     fun close() {
-        closed=true;gate.cancel();cachedPair=null;scope.cancel()
+        closed=true;gate.cancel();cachedPair=null;scope.cancel(null)
         Handler(Looper.getMainLooper()).post{dialog?.dismiss();dialog=null;activeWeb=null}
     }
     companion object {
@@ -422,7 +422,7 @@ internal class LiderCaptionSession(
         private fun requireCaption(raw:String) {
             val u=URI(raw)
             require(sourceDocument(raw)&&u.rawQuery==null&&u.rawFragment==null)
-            require(u.path.matches(Regex("/subs/[a-z0-9][a-z0-9-]{0,239}/[1-9][0-9]{0,4}\\.(?:vtt|srt)")))
+            require(u.rawPath.matches(Regex("/subs/[A-Za-z0-9][A-Za-z0-9-]{0,239}/[1-9][0-9]{0,4}\\.(?:vtt|srt)")))
         }
         private fun sameCaption(raw:String,target:String):Boolean=runCatching {
             val u=URI(raw);val t=URI(target)
